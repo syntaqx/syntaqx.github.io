@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+Posts...
+
 <section class="content">
   <ul class="listing">
     {% for post in site.posts %}
