@@ -15,6 +15,8 @@ button,
 input,
 select,
 textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     color: #222;
 }
 
@@ -98,8 +100,53 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.menu-sidebar {
+    margin-left: -200px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    bottom: 0;
+    z-index: 1000;
+    background: #191818;
+    overflow-y: auto;
+    -webkit-overflow-scroll: touch;
+}
 
+.menu-sidebar a {
+    padding: 0.6em 1em;
+    color: #999;
+    display: block;
+    line-height: 1.5em;
+    text-decoration: none;
+}
 
+.menu-sidebar a:hover {
+    background: #333;
+}
+
+.menu-sidebar .menu-sidebar-heading {
+    margin-top: .5em;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.menu-sidebar .menu-sidebar-heading:hover {
+    background: transparent;
+    color: #999;
+}
+
+.menu-sidebar ul {
+    border-top: 1px solid #333;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-sidebar ul li {
+    margin: 0;
+    padding: 0;
+}
 
 
 
