@@ -1,0 +1,9 @@
+# gitignore - Specifies intentionally untracked files to ignore
+# http://git-scm.com/docs/gitignore
+
+/_site
+
+# Common OS Files
+.DS_Store
+.DS_Store?
+._*

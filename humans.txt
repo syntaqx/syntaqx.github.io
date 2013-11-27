@@ -1,0 +1,15 @@
+# The humans responsible & technology colophon
+# http://humanstxt.org/
+
+# TEAM
+
+    Chase Hutchins -- Developer -- @syntaqx
+
+# THANKS
+
+    Paul Irish, Zach Holman
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
