@@ -9,20 +9,35 @@ body {
   font-size: 14px;
 }
 
-.container {
+a {
+  text-decoration: none;
+  color: #428bca;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: #2a6496;
+}
+
+pre {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.container,
+.main-container {
   margin-right: auto;
   margin-left: auto;
+  width: 990px;
 }
 
 .site-header {
   background: #fff;
   box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
-  padding: 0 20px;
+  margin-bottom: 30px;
   min-height: 60px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   *zoom: 1;
 }
 
@@ -73,40 +88,38 @@ body {
   line-height: 60px;
   display: block;
   float: left;
+  text-decoration: none;
+  color: #fff;
+}
+
+.site-brand:hover {
   color: #fff;
 }
 
 .main-container {
-  height: 100%;
+  padding-bottom: 15px;
 }
 
-.main-container ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: table;
+.page-header {
+  border-bottom: 1px solid #eee;
+  margin: 40px 0 20px;
+  padding-bottom: 9px;
 }
 
-.main-container li {
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  width: 31%;
-  margin: 0 1%;
-  text-align: center;
-  transition: all 0.5s ease;
+.articles {
 }
 
-.main-container li:hover {
-  background-color: #e74c3c;
-  color: white;
+.articles .article-preview {
+  margin-bottom: 30px;
 }
 
-.main-container li p {
-  margin-top: 10px;
+.article header h1,
+.article header h2 {
+  margin-bottom: 5px;
 }
 
-.main-container li .fa {
-  font-size: 60px;
+.article header time {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 12px;
 }
