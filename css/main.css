@@ -4,10 +4,83 @@ body {
 }
 
 body {
+  line-height: 20px;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
 }
 
-ul {
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1170px;
+}
+
+.site-header {
+  background: #fff;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  *zoom: 1;
+}
+
+.site-header:before,
+.site-header:after {
+  content: " ";
+  display: table;
+}
+
+.site-header:after {
+  clear: both;
+}
+
+.site-header-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+
+.site-header-nav li {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.site-header-nav li a {
+  padding: 0 10px;
+  height: 60px;
+  display: block;
+  line-height: 60px;
+  text-decoration: none;
+  color: #afafaf;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.site-header-nav li a:hover {
+  color: #333;
+}
+
+.site-brand {
+  background: #e74c3c;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  float: left;
+  color: #fff;
+}
+
+.main-container {
+  height: 100%;
+}
+
+.main-container ul {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -15,7 +88,7 @@ ul {
   display: table;
 }
 
-li {
+.main-container li {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
@@ -25,15 +98,15 @@ li {
   transition: all 0.5s ease;
 }
 
-li:hover {
+.main-container li:hover {
   background-color: #e74c3c;
   color: white;
 }
 
-li p {
+.main-container li p {
   margin-top: 10px;
 }
 
-.fa {
+.main-container li .fa {
   font-size: 60px;
 }
