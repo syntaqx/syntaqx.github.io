@@ -27,6 +27,13 @@ pre {
   font-size: 11px;
 }
 
+blockquote {
+  background-color: #f1f1f1;
+  border-left: 2px solid #ddd;
+  margin: 0;
+  padding: 1px 15px;
+}
+
 .container,
 .main-container {
   margin-right: auto;
