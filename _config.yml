@@ -3,3 +3,6 @@ pygments: true
 permalink: /posts/:title
 rdiscount:
   extensions: [smart]
+
+# Configuration options
+url: http://syntaqx.com
