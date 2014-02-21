@@ -34,6 +34,14 @@ blockquote {
   padding: 1px 15px;
 }
 
+hr {
+  margin: 20px 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #efefef;
+  height: 0;
+}
+
 .container,
 .main-container {
   margin-right: auto;
