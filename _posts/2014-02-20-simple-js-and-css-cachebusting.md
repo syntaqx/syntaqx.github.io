@@ -9,7 +9,7 @@ the website the user doesn't have to waste time downloading the same things over
 and over, speeding up their browsing experience. This caching is generally a
 benefit to a website owner, saving them bandwidth and improving user experience,
 but what about when __you__ change those resources and need them to use the
-*new* version.
+*new* version?
 
 ## Introducing Cachebusting
 
