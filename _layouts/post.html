@@ -2,17 +2,18 @@
 layout: default
 ---
 
-<article class="article">
-
-    <header class="page-header">
-      <h1>{{ page.title }}</h1>
-      <time>{{ page.date | date: "%B %e, %Y" }}</time>
-    </header>
+<article class="post-item">
+  <header class="post-item-header">
+    <time class="post-date">{{ page.date | date: "%B %e, %Y" }}</time>
+    <h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+  </header>
+  <section class="post-item-content">
 
     {% include adsense.html %}
 
     {{ content }}
 
-</article>
+    {% include adsense.html %}
 
-{% include adsense.html %}
+  </section>
+</article>

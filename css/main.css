@@ -105,7 +105,6 @@ blockquote {
 }
 
 .main-container {
-  padding-bottom: 15px;
 }
 
 .page-header {
@@ -130,6 +129,38 @@ blockquote {
   margin-bottom: 15px;
   display: block;
   font-size: 12px;
+}
+
+.post-list {
+  margin-bottom: 20px;
+}
+
+.post-item .post-item-header {
+  border-bottom: 1px solid #efefef;
+  padding: 20px 0;
+}
+
+.post-item:first-child .post-item-header {
+  padding-top: 0;
+}
+
+.post-item:last-child:not(:first-child) .post-item-header {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.post-item-content {
+  padding: 20px 0;
+}
+
+.post-date {
+  font-size: 13px;
+  color: #ababab;
+}
+
+.post-title {
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .adsense-block {
