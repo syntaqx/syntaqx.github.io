@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple JavaScript & CSS Cachebusting
+title: Simple Cachebusting Technique
 ---
 
 When a user first comes to a website their browser downloads and caches
