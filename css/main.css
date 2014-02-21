@@ -24,6 +24,7 @@ pre {
   background-color: #f1f1f1;
   border-radius: 5px;
   padding: 20px;
+  font-size: 11px;
 }
 
 .container,
@@ -122,4 +123,10 @@ pre {
   margin-bottom: 15px;
   display: block;
   font-size: 12px;
+}
+
+.adsense-block {
+  background-color: #f1f1f1;
+  width: 468px;
+  height: 60px;
 }
