@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/main.css?{{ site.time | date: "%Y%m%d%g%m%s" }}">
 </head>
 <body>
 
@@ -36,10 +36,6 @@
     {{ content }}
 
   </div>
-
-  <!-- scripts; concatenated and minified -->
-  <script src="/js/main.js"></script>
-  <!-- end styles -->
 
   <script>
   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
