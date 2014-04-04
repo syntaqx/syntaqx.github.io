@@ -5,15 +5,15 @@ title: Removing Unused CSS
 So you've just finished adding a new feature to your latest application. You've
 recieved your rush of gratification seeing everything go live and all of your
 tests prove you're the bug-free programmer you've always thought you were. So,
-now what? Remove stuff you don't need! This could be as simple as removing lines
-of code, images, various unused dependencies or rewriting that not-so-perfect
-code you know you wrote.
+now what?
 
-Okay, all of those are easy enough. Run your images through ImageOptim, refactor
-the code, what now? Wouldn't it be amazing if you could find all of the unused
-CSS in your project and get rid of it? There is! It's called
-[uncss](https://github.com/giakki/uncss), a NodeJS project that works quite
-beautifully.
+Remove stuff you don't need! This could be as simple as removing lines of code,
+images, various unused dependencies or rewriting that not-so-perfect code you
+know you wrote. Okay, all of those are easy enough. Run your images through
+ImageOptim, refactor the code, what now? Wouldn't it be amazing if you could
+find all of the unused CSS in your project and get rid of it? There is! It's
+called [uncss](https://github.com/giakki/uncss), a NodeJS project that works
+quite beautifully.
 
 ## Install It
 
@@ -84,7 +84,7 @@ uncss(raw_html, options, function (error, output) {
 
 - - -
 
-It's unfortunate how necessary a tool like this, especially for projects with
+It's unfortunate how necessary a tool like this is, especially for projects with
 years of adding, maintenance and removal of styles (probably from multiple
 developers). The excess CSS builds up and costs your users bandwidth (and more
 importantly, slow down your site). Elimination of this dead code is important.
