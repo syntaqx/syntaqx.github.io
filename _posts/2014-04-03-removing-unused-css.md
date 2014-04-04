@@ -2,10 +2,10 @@
 layout: post
 title: Removing Unused CSS
 ---
-So you've just finished adding a new feature to your latest application. You've
-recieved your rush of gratification seeing everything go live and all of your
-tests prove you're the bug-free programmer you've always thought you were. So,
-now what?
+So you've just finished adding a new feature to your latest application,
+recieved your rush of gratification seeing everything go live, and all of your
+tests prove you're the bug-free programming you've always thought you were. Now
+what?
 
 Remove stuff you don't need! This could be as simple as removing lines of code,
 images, various unused dependencies, or rewriting that not-so-perfect code you
