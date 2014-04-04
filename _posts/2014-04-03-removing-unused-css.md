@@ -9,8 +9,8 @@ now what?
 
 Remove stuff you don't need! This could be as simple as removing lines of code,
 images, various unused dependencies, or rewriting that not-so-perfect code you
-know you wrote. Okay, all of those are easy enough. Run your images through
-ImageOptim, refactor the code, what now? Wouldn't it be amazing if you could
+know you wrote. Okay, all of those are easy enough: run your images through
+ImageOptim, refactor the code, but what now? Wouldn't it be amazing if you could
 find all of the unused CSS in your project and get rid of it? There is! It's
 called [uncss](https://github.com/giakki/uncss), a NodeJS project that works
 quite beautifully.
