@@ -14,11 +14,9 @@ magically work better in Microsoft's flagship nuisance.
 
 ## [html5shiv](https://code.google.com/p/html5shiv/)
 
-```
-<!--[if lt IE 9]>
-<script src="dist/html5shiv.js"></script>
-<![endif]-->
-```
+    <!--[if lt IE 9]>
+    <script src="dist/html5shiv.js"></script>
+    <![endif]-->
 
 HTML5shiv creates HTML5 elements like `main`, `header`, `footer`, and so on via
 JavaScript. Somehow creating said elements via JavaScript communicates that they
@@ -27,11 +25,9 @@ does it really matter? This is a must-have on all websites.
 
 ## [selectivizr.js](http://selectivizr.com/)
 
-```
-<!--[if lte IE 8]>
-<script src="js/libs/selectivizr.js"></script>
-<![endif]-->
-```
+    <!--[if lte IE 8]>
+    <script src="js/libs/selectivizr.js"></script>
+    <![endif]-->
 
 Selectivizr is a particular amazing resource that polyfills tons of unsupported
 CSS selectors and properties (including `:last-child`!). It's amazingly easy to
@@ -40,14 +36,12 @@ styles when you're not missing half of your toolkit.
 
 ## Conditional `<html>` comments
 
-```
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
-```
+    <!DOCTYPE html>
+    <!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+    <!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+    <!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+    <!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 
 The is quite possibly the ugliest set of conditional comments you'll ever see,
 but ugly or not, this code works exactly as intended.
