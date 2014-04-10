@@ -15,24 +15,13 @@ magically work better in Microsoft's flagship nuisance.
 ## [html5shiv](https://code.google.com/p/html5shiv/)
 
     <!--[if lt IE 9]>
-    <script src="dist/html5shiv.js"></script>
+    <script src="libs/html5shiv.js"></script>
     <![endif]-->
 
 HTML5shiv creates HTML5 elements like `main`, `header`, `footer`, and so on via
 JavaScript. Somehow creating said elements via JavaScript communicates that they
 are stylable. Understanding the paradox of why it works could take days, but
 does it really matter? This is a must-have on all websites.
-
-## [selectivizr.js](http://selectivizr.com/)
-
-    <!--[if lte IE 8]>
-    <script src="js/libs/selectivizr.js"></script>
-    <![endif]-->
-
-Selectivizr is a particularly amazing resource that polyfills tons of
-unsupported CSS selectors and properties (including `:last-child`!). It's
-amazingly easy to plug-and-play, and you might be surprised how easy it is to
-make cross-browser styles when you're not missing half of your toolkit.
 
 ## Conditional `<html>` comments
 
@@ -52,6 +41,29 @@ to wait for the JavaScript interpreter to execute anything, and you
 __especially__ don't need to include additional weight of a library. Your styles
 are defined classes and are immediately enacted, and your users won't see a
 flash of unstyled content.
+
+## [Modernizr](http://modernizr.com/)
+
+    <script src="libs/modernizr.js"></script>
+
+Modernizr is a JavaScipt library that detects HTML5 and CSS3 features in the
+user's browser. This is done by adding various classes to your `html` element
+allowing you to conditionally target specific behaviors in your stylesheets.
+
+Using Modernizr is useful even outside of Internet Explorer as it allows you to
+target a browser based on features that exist (or don't) and act accordingly. It
+even comes (optionally) pre-packaged with html5shiv.
+
+## [selectivizr.js](http://selectivizr.com/)
+
+    <!--[if lte IE 8]>
+    <script src="libs/selectivizr.js"></script>
+    <![endif]-->
+
+Selectivizr is a particularly amazing resource that polyfills tons of
+unsupported CSS selectors and properties (including `:last-child`!). It's
+amazingly easy to plug-and-play, and you might be surprised how easy it is to
+make cross-browser styles when you're not missing half of your toolkit.
 
 ## [PIE](http://css3pie.com/)
 
@@ -81,6 +93,9 @@ fixes are currently in development.
 - - -
 
 There are many other tools out there to help you with the standardization and
-modernization of Internet Explorer. I've found that using at least these will
+modernization of Internet Explorer. I've found that using at *least* these will
 give your users a better experience and remove a lot of the headaches associated
-to development.
+to web development.
+
+For a much more exhaustive list of libraries, you might want to check out
+Modernizr's wiki page: [HTML5 Cross Browser Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills).
