@@ -52,3 +52,35 @@ to wait for the JavaScript interpreter to execute anything, and you
 __especially__ don't need to include additional weight of a library. Your styles
 are defined classes and are immediately enacted, and your users won't see a
 flash of unstyled content.
+
+## [PIE](http://css3pie.com/)
+
+    #element {
+      /* your CSS rules, like `border-radius`, `box-shadow`, etc. */
+      behavior: url(PIE.htc);
+    }
+
+PIE (Progressive Internet Explorer) is an IE attached behavior which, when
+applied to an element, allows IE 6-9 to recognize and display a number of CSS3
+properties. To make things more performant, it actually doesn't parse your
+styles outright, but instead asks you to add a `behavior` rule to your element
+(as shown above).
+
+At the time of writing this post, PIE has either full or partial support for
+the following features:
+
+* border-radius
+* box-shadow
+* border-image
+* multiple background images
+* linear-gradient as background image
+
+Other features such as radial gradients, multiple box shadow, and plenty of bug
+fixes are currently in development.
+
+- - -
+
+There are many other tools out there to help you with the standardization and
+modernization of Internet Explorer. I've found that using at least these will
+give your users a better experience and remove a lot of the headaches associated
+to development.
