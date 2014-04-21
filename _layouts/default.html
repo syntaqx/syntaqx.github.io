@@ -11,14 +11,14 @@
   <!-- Twitter Card Data -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@syntaqx">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &ndash;{% endif %}{{ site.name }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.name }}">
   <meta name="twitter:creator" content="@syntaqx">
   <meta name="twitter:image" content="{{ site.url }}/img/opengraph.png">
 
   <!-- Open Graph Data -->
   <meta name="og:title" content="{{ page.title }}">
   <meta name="og:type" content="article">
-  <meta name="og:url" content="{{ page.url }}">
+  <meta name="og:url" content="{{ site.url }}{{ page.url }}">
   <meta name="og:image" content="{{ site.url }}/img/opengraph.png">
   <meta name="og:site_name" content="{{ site.name }}">
   <meta name="fb:admins" content="1219924231">
