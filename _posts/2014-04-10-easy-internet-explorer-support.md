@@ -90,6 +90,17 @@ the following features:
 Other features such as radial gradients, multiple box shadow, and plenty of bug
 fixes are currently in development.
 
+## [background-size-polyfill](https://github.com/louisremi/background-size-polyfill)
+
+    .selector {
+      background-size: cover;
+      -ms-behavior: url(backgroundsize.min.htc);
+    }
+
+Another one of the (many) functionalities Internet Explorer lacks is the
+elegance of `background-size: cover` and `background-size: contain`. This simple
+polyfill provides your users with these attributes in the easiest way possible.
+
 - - -
 
 There are many other tools out there to help you with the standardization and

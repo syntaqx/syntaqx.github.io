@@ -5,4 +5,5 @@ rdiscount:
   extensions: [smart]
 
 # Configuration options
+name: syntaqx
 url: http://syntaqx.com

@@ -4,14 +4,31 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>{{ page.title }} - syntaqx</title>
+  <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.name }}</title>
+  <meta name="author" content="{{ site.name }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Twitter Card Data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@syntaqx">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} &ndash;{% endif %}{{ site.name }}">
+  <meta name="twitter:creator" content="@syntaqx">
+  <meta name="twitter:image" content="{{ site.url }}/img/opengraph.png">
+
+  <!-- Open Graph Data -->
+  <meta name="og:title" content="{{ page.title }}">
+  <meta name="og:type" content="article">
+  <meta name="og:url" content="{{ page.url }}">
+  <meta name="og:image" content="{{ site.url }}/img/opengraph.png">
+  <meta name="og:site_name" content="{{ site.name }}">
+  <meta name="fb:admins" content="1219924231">
+
+  <!-- styles -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="/css/main.css?{{ site.time | date: "%Y%m%d%g%m%s" }}">
+  <!-- end styles -->
 </head>
 <body>
 
