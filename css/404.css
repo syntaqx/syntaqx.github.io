@@ -1,10 +1,9 @@
 body {
-  background:#0000aa;
-  color:#ffffff;
-  font-family:courier;
-  font-size:14px;
-  text-align:center;
-  margin:100px;
+  background: #0000aa;
+  font-family: courier;
+  font-size: 18px;
+  text-align: center;
+  color:#fff;
 }
 
 blink {
@@ -12,7 +11,7 @@ blink {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 200px auto 0;
   width: 800px;
 }
 
@@ -20,7 +19,7 @@ h1 {
   background-color: #ccc;
   padding: 2px 8px;
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   color: #0000aa;
 }
 
@@ -28,4 +27,27 @@ p {
   margin: 20px 0;
   padding: 0;
   text-align:left;
+}
+
+.blink {
+  -webkit-animation-duration: .5s;
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
