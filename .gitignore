@@ -1,6 +1,7 @@
 # gitignore - Specifies intentionally untracked files to ignore
 # http://git-scm.com/docs/gitignore
 
+# Jekyll
 _site
 
 # Common OS Files

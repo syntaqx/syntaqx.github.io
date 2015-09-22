@@ -3,17 +3,19 @@ layout: default
 title: Chase Hutchins
 ---
 
-<seciton class="post-list">
+<div class="container">
 
+  <ul class="recent-posts">
   {% for post in site.posts %}
-
-  <article class="post-item">
-    <header class="post-item-header">
-      <time class="post-date">{{ post.date | date: "%B %e, %Y" }}</time>
-      <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    </header>
-  </article>
-
+    <li>
+        <a href="{{ post.url }}">
+          <div>
+            <span class="title">{{ post.title }}</span>
+            <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+          </div>
+        </a>
+      </li>
   {% endfor %}
+  </ul>
 
-</section>
+</div>

@@ -6,7 +6,7 @@ body {
 body {
   line-height: 20px;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 a {
@@ -175,4 +175,31 @@ hr {
   background-color: #f1f1f1;
   width: 468px;
   height: 60px;
+}
+
+
+.recent-posts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recent-posts li {
+  margin: 15px;
+  padding: 0;
+}
+
+.recent-posts li .title {
+  color: #e74c3c;
+}
+
+.recent-posts li a:hover .title {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recent-posts li .date {
+  float: right;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
 }
