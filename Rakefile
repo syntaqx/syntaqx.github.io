@@ -36,7 +36,6 @@ task :html_proofer do
   puts 'Running html proofer...'.yellow.bold
   HTMLProofer.check_directory('./_site', allow_hash_href: true,
                                          internal_domains: ['localhost:4000'],
-                                         http_status_ignore: [0, 403, 999],
                                          assume_extension: true,
                                          disable_external: true,
                                          url_ignore: [host_regex]).run
