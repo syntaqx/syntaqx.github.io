@@ -35,6 +35,9 @@ task :html_proofer do
   host_regex = Regexp.new(site_domain(config_file))
   puts 'Running html proofer...'.yellow.bold
   HTMLProofer.check_directory('./_site', allow_hash_href: true,
+                                         internal_domains: ['localhost:4000'],
+                                         assume_extension: true,
+                                         disable_external: true,
                                          url_ignore: [host_regex]).run
 end
 

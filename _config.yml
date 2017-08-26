@@ -11,7 +11,10 @@ copyright: syntaqx
 description: null
 email: syntaqx@gmail.com
 locale: en-US
-url: https://syntaqx.com # the site basename & protocol, without trailing slash
+
+# url settings
+baseurl: ""                # the subpath of your site, e.g. /blog
+url: "https://syntaqx.com" # baseline & protocol of the site, without trailing slash
 
 # Project rendering settings
 title_separator: "-"

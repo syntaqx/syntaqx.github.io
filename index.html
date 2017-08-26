@@ -8,7 +8,7 @@ title: Chase Hutchins
   <ul class="recent-posts">
   {% for post in site.posts %}
     <li>
-        <a href="{{ post.url }}">
+        <a href="{{ post.url | relative_url }}">
           <div>
             <span class="title">{{ post.title }}</span>
             <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
