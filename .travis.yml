@@ -8,13 +8,6 @@ rvm:
   - 2.4
   - ruby-head
 
-# Ensure we're running on as up-to-date as possible RubyGems.
-# Note: This impacts overall test time, as additional network downloads and
-# installations are required. This may be removed in the future.
-before_install:
-  - gem update --system
-  - gem --version
-
 # Install all bundle dependencies, and then run the verifiers
 install:
   - travis_retry bundle install
