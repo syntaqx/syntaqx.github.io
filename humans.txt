@@ -16,6 +16,7 @@ permalink: /humans.txt
 # TECHNOLOGY COLOPHON
 
     Last update: {{ site.time | date: site.date_format }}
+    Language: {{ site.lang }}
     Standards: HTML5, CSS3, ES5
     Components: Jekyll {{ jekyll.version }}, Bootstrap 4
-    Software: Sublime Text 3, Photoshop CC 2017
+    Software: Sublime Text 3, Adobe Creative Suite
