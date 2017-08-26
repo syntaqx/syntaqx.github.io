@@ -1,15 +1,21 @@
+---
+layout: null
+permalink: /humans.txt
+---
+
 # The humans responsible & technology colophon
 # http://humanstxt.org/
 
 # TEAM
 
-    Chase Hutchins -- Developer -- @syntaqx
+    {% for entry in site.data.authors %}{% assign author_id = entry | first %}{% assign author = site.data.authors[author_id] %}
+    {{ author.name }} - {{ author.twitter | prepend:"@" }}
+    {%- endfor %}
 
-# THANKS
-
-    Paul Irish, Zach Holman
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Last update: {{ site.time | date: site.date_format }}
+    Standards: HTML5, CSS3, ES5
+    Components: Jekyll {{ jekyll.version }}, Bootstrap 4
+    Software: Sublime Text 3, Photoshop CC 2017

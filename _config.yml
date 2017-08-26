@@ -1,9 +1,58 @@
-markdown: rdiscount
-highlighter: pygments
-permalink: /posts/:title
-rdiscount:
-  extensions: [smart]
+# Configuration settings that affect the entire site. These values are generally
+# expected to be set up once, and rarely changed after that.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when using
+# `jekyll serve`. If you make changes to this file, you will need to restart the
+# local server.
 
-# Configuration options
-name: syntaqx
-url: http://syntaqx.com
+# Project settings
+title: syntaqx
+copyright: syntaqx
+description: null
+email: syntaqx@gmail.com
+locale: en-US
+url: https://syntaqx.com # the site basename & protocol, without trailing slash
+
+# Project rendering settings
+title_separator: "-"
+date_format: "%b %-d, %Y"
+
+# Handling Reading
+include: ["_pages"]
+
+# Collections
+collections:
+  products:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+# Plugins (previously gems)
+# You can mimic GitHub Pages with --safe
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+whitelist:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Outputting
+permalink: /:categories/:title
+timezone: UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Pagination
+# paginate: 5
+# paginate_path: /blog/page:num/
+
+# Feed
+feed:
+  path: atom.xml

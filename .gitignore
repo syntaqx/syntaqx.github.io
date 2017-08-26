@@ -1,10 +1,14 @@
 # gitignore - Specifies intentionally untracked files to ignore
 # http://git-scm.com/docs/gitignore
 
-# Jekyll
-_site
+# bundler
+.bundle
+vendor
+tmp
 
-# Common OS Files
-.DS_Store
-.DS_Store?
-._*
+# jekyll build artifacts
+_site
+.jekyll-metadata
+
+# asset build artifacts
+.sass-cache
