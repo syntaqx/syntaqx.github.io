@@ -1,0 +1,24 @@
+<header>
+  <div class="container">
+
+    <h1>{{ page.alt_title | default: page.title | default: site.title | markdownify | strip_html }}</h1>
+    {% if page.sub_title %}
+    <h2 class="text-muted">{{ page.sub_title | markdownify | strip_html }}</h2>
+    {% endif %}
+
+    {% assign author = page.author | default: page.authors[0] | default: site.author %}
+    {% assign author = site.data.authors[author] %}
+
+    {% unless page.layout == 'page' %}
+    <p>
+      {% if page.date %}
+      <span><i class="fa fa-calendar"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</time></span>
+      {% endif %}
+      {% if author %}
+      <span><i class="fa fa-user"></i> <a href="{{ author.url }}">{{ author.name }}</a></span>
+      {% endif %}
+    </p>
+    {% endunless %}
+
+  </div>
+</header>

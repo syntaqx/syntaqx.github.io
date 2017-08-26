@@ -1,5 +1,6 @@
 chase:
   name: Chase Hutchins
+  uri: &uri "https://syntaqx.com/"
+  url: *uri
   twitter: syntaqx
-  uri: "https://syntaqx.com"
-  email: syntaqx@gmail.com
+  github: https://github.com/syntaqx

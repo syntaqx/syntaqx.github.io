@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 source 'https://rubygems.org'
 
 # This file manages which version of Jekyll is used to build and serve. Although
@@ -14,19 +13,19 @@ source 'https://rubygems.org'
 # This will ensure development work will be deployable to production.
 gem 'jekyll', '3.5.2'
 
-# Since we're aiming for GitHub Pages compatibility, we'll use the
-# `github-pages` gem provided by GitHub. In the event any dependencies used by
-# them upgrades, our Gemfile will be out of date and make it obvious we need to
-# ensure we're compatibile still.
+# Since plugins are disabled by GitHub Pages, we'll use the github-pages gem to
+# bootstrap dependencies for setting up and maintaining a Jekyll environment in
+# sync with the versions supported by GitHub Pages.
+# https://pages.github.com/versions/
 gem 'github-pages', group: :jekyll_plugins
 
-# Gems not provided from github-pages are additionally added here.
-# Non-provided plugins
+# Custom jekyll_plugins Gems
 group :jekyll_plugins do
-  # nil, for compatibility with github-pages
+  # null, compatibility with GitHub Pages is the goal.
+  # Leaving for the future, if we ever have to deviate.
 end
 
-# Testing dependencies
+# Testing and development dependencies.
 group :test, :development do
   gem 'colorize'
   gem 'html-proofer'

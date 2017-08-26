@@ -1,0 +1,18 @@
+primary:
+  - title: "Blog"
+    url: "/blog/"
+
+  - title: "Projects"
+    url: "/projects/"
+
+  - title: "About"
+    url: "/about/"
+
+  - title: "Contact"
+    url: "/contact/"
+
+  # - title: Dropdown Navigation
+  #   url: "/probably-#/"
+  #   children:
+  #   - title: "Archived Posts"
+  #     url: "/archive/"

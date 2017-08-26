@@ -6,8 +6,9 @@
 # local server.
 
 # Project settings
-title: syntaqx
-copyright: syntaqx
+name: &name syntaqx
+title: *name
+copyright: *name
 description: null
 email: syntaqx@gmail.com
 locale: en-US
@@ -16,9 +17,44 @@ locale: en-US
 baseurl: ""                # the subpath of your site, e.g. /blog
 url: "https://syntaqx.com" # baseline & protocol of the site, without trailing slash
 
+# Default site author
+author: chase
+
+# Social profile links
+# https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type: "Person" # must be either: Person or Organization (defaults to Person)
+  name: "Chase Hutchins"
+  links:
+    - "https://github.com/syntaqx"
+    - "https://twitter.com/syntaqx"
+    - "https://plus.google.com/+ChaseHutchins"
+    - "https://www.youtube.com/user/syntaqx"
+    - "https://www.linkedin.com/in/syntaqx"
+
+# Analytics
+analytics:
+  google:
+    type: "google" # must be either: google or universal (defaults to google)
+    tracking_id: ""
+
+# Site verification codes
+site_verification:
+  google: ""
+  bing: ""
+  alexa: ""
+  yandex: ""
+
 # Project rendering settings
 title_separator: "-"
 date_format: "%b %-d, %Y"
+
+# Outputting
+permalink: /blog/:categories/:title
+paginate: 5
+paginate_path: "blog/page:num"
+timezone: UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
 
 # Handling Reading
 include: ["_pages"]
@@ -41,20 +77,25 @@ defaults:
 # Plugins (previously gems)
 # You can mimic GitHub Pages with --safe
 plugins:
-  - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 whitelist:
-  - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Outputting
-permalink: /:categories/:title
-timezone: UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-# Pagination
-# paginate: 5
-# paginate_path: /blog/page:num/
+# HTML compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: [local, development]
 
 # Feed
 feed:
