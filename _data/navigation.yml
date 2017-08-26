@@ -16,3 +16,10 @@ primary:
   #   children:
   #   - title: "Archived Posts"
   #     url: "/archive/"
+
+legal:
+  - title: "Privacy"
+    url: "/privacy/"
+
+  - title: "Terms"
+    url: "/terms/"

@@ -6,13 +6,14 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <p>Made with <i class="fa fa-heart"></i> and <i class="fa fa-coffee"></i> by <strong>syntaqx</strong></p>
         <p>&copy; {{ site.time | date: '%Y' }} {{ copyright }}</p>
       </div>
       <div class="col">
         <ul class="list-inline text-right">
-          <li class="list-inline-item"><a href="{{ link legal/terms.md }}">Terms</a></li>
-          <li class="list-inline-item"><a href="{{ link legal/privacy.md }}">Privacy</a></li>
+          <li class="list-inline-item"><a href="{{ "/sitemap/" | absolute_url }}">Sitemap</a></li>
+          {% for item in site.data.navigation.legal %}
+          <li class="list-inline-item"><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
+          {% endfor %}
         </ul>
       </div>
     </div>

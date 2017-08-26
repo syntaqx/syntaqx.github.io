@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 # This file manages which version of Jekyll is used to build and serve. Although

@@ -11,11 +11,12 @@ title: *name
 copyright: *name
 description: null
 email: syntaqx@gmail.com
-locale: en-US
+locale: en_US
 
 # url settings
 baseurl: ""                # the subpath of your site, e.g. /blog
 url: "https://syntaqx.com" # baseline & protocol of the site, without trailing slash
+repository: "syntaqx/syntaqx.github.io"
 
 # Default site author
 author: chase
@@ -90,6 +91,7 @@ defaults:
 # Plugins (previously gems)
 # You can mimic GitHub Pages with --safe
 plugins:
+  - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-feed
   - jekyll-gist

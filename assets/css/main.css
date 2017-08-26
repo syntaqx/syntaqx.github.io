@@ -30,16 +30,7 @@ a:focus {
   padding: 24px 0;
 }
 
-.main-footer p {
-  margin: 0;
-}
-
-.main-footer a {
-  color: #e5e5e5;
-}
-
-.main-footer a:active,
-.main-footer a:focus,
-.main-footer a:hover {
-  color: #fff;
+.main-footer p,
+.main-footer ul {
+  margin-bottom: 0;
 }

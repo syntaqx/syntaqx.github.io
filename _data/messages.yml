@@ -1,0 +1,10 @@
+locales:
+  # English
+  en: &DEFAULT_EN
+    pagination:
+      next: "Newer"
+      previous: "Older"
+  en_US:
+    <<: *DEFAULT_EN
+  en_UK:
+    <<: *DEFAULT_EN
