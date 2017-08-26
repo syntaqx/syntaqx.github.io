@@ -59,7 +59,7 @@ kramdown:
 # Outputting
 permalink: /blog/:categories/:title
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: "/blog/page:num"
 timezone: UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
