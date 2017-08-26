@@ -21,6 +21,10 @@ a:focus {
   flex: 1;
 }
 
+.highlight {
+  padding: 15px;
+}
+
 .main-footer {
   background: #f2f2f2;
   padding: 24px 0;

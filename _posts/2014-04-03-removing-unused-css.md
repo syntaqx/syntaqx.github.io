@@ -19,14 +19,14 @@ quite beautifully.
 
 We're using NodeJS here, launch up NPM and install it globally.
 
-```
-npm install -g uncss
+```sh
+$ npm install -g uncss
 ```
 
 ## Basic Usage
 
-```
-uncss http://syntaqx.com > styles.css
+```sh
+$ uncss http://syntaqx.com > styles.css
 ```
 
 The output of this simple command is a new stylesheet containing only the CSS
@@ -49,7 +49,7 @@ And holy crap, you just saved yourself hours upon hours of manual trimming.
 Given we're working with NodeJS, you can also take advantage of __uncss__ using
 its JavaScript API. Something like this?
 
-```
+```js
 var uncss = require('uncss')
 
 var files = ['an', 'array', 'of', 'files']

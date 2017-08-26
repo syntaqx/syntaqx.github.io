@@ -49,6 +49,13 @@ site_verification:
 title_separator: "-"
 date_format: "%b %-d, %Y"
 
+# Conversion
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 # Outputting
 permalink: /blog/:categories/:title
 paginate: 5
@@ -67,6 +74,12 @@ collections:
 
 # Defaults
 defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
   # _pages
   - scope:
       path: ""
@@ -77,13 +90,6 @@ defaults:
 # Plugins (previously gems)
 # You can mimic GitHub Pages with --safe
 plugins:
-  - jekyll-paginate
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-whitelist:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-gist
