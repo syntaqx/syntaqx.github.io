@@ -1,21 +1,22 @@
 ---
-layout: simple
 permalink: /about/
 title: About
 ---
 
-[jekyll]: https://jekyllrb.com/
-[github-pages]: https://pages.github.com/
+[imgur]: https://imgur.com/
+
+{% include calc-age.html birthday="1990-11-06" %}
 
 {:class="lead"}
-I'm a software engineer who's passionate about making amazing products that
-solve problems.
+My name is Chase Hutchins. I am a {{ age }} year old software engineer from Salt
+Lake City, UT. Vocationally, I'm a Senior Software Engineer on the Platform Team
+at [Imgur][].
 
-I started this blog to establish a few consistencies for myself, and others.
-Firstly, having a routine of blogging is very good. My life is already sparatic
-enough, some form of daily routine is well needed. Secondly, for both myself and
-others, I'd like to fill holes in knowledge transmission and provide technical
-tips or tutorials for topics I find worthwhile.
+For pleasure, I'm an open-source software developer, gamer, live streamer,
+animal lover and overall nerd. I like to consider myself a driven self-starter
+with a passion for making amazing products to solve problems I encounter.
 
-This site is powered by [Jekyll][] - a static site generator, hosted on
-[GitHub Pages][github-pages].
+I've rebooted this project in a hope to push myself to be consistent with
+blogging in hopes to fill technical gaps in knowledge transmission by providing
+technical tips, tutorials, news and general brain-dumps for subjects I have
+grown proficient in, or topics I find worthwhile.

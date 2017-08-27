@@ -3,10 +3,11 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
+<html lang="{{ page.lang | slice: 0,2 }}">
 {% include head.html %}
-<body class="flex-layout layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
+<body class="flex-layout">
 
+  {% include skip-links.html %}
   {% include navigation.html %}
 
   <div class="flex-content">

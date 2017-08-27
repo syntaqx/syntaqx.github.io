@@ -2,6 +2,9 @@ primary:
   - title: "Blog"
     url: "/blog/"
 
+  - title: "Tutorials"
+    url: "/tutorials/"
+
   - title: "Projects"
     url: "/projects/"
 

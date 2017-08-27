@@ -1,28 +1,56 @@
 ---
 layout: page
-title: "Blog"
+permalink: /blog/
+title: Articles
+sitemap:
+  priority: 1.0
 ---
 
 <div class="row">
   <div class="col">
 
     {% for post in paginator.posts %}
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
+      <article>
+        <header>
+          <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+          <ul class="post-meta">
+            {% if post.category %}
+            <li class="post-meta-item"><a href="#" class="badge badge-secondary">{{ post.category }}</a></li>
+            {% endif %}
+            <li class="post-meta-item"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></li>
+            {% assign author = post.author | default: post.authors[0] | default: site.author %}
+            {% assign author = site.data.authors[author] %}
+            {% if author %}
+            <li class="post-meta-item">
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">
+                  <a href="{{ author.url }}" rel="author">{{ author.name }}</a>
+                </span>
+              </span>
+            </li>
+            {% endif %}
+          </ul>
+        </header>
+        <div>
+          {{ post.excerpt }}
+        </div>
+        <div class="text-right">
+          <a href="{{ post.url | absolute_url }}" class="btn btn-light" role="button">
+            Read More <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </article>
     {% endfor %}
 
     {% include pagination.html %}
 
   </div>
   <div class="col-md-3">
-    <!--
     <div class="list-group">
       <a href="#" class="list-group-item active">All Posts</a>
-      <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-      <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-      <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-      <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+      {% for category in site.categories %}
+      <a href="#" class="list-group-item">{{ category | first | capitalize }}</a>
+      {% endfor %}
     </div>
-    -->
   </div>
 </div>

@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: none
 permalink: /humans.txt
 ---
 
@@ -16,7 +16,7 @@ permalink: /humans.txt
 # TECHNOLOGY COLOPHON
 
     Last update: {{ site.time | date: site.date_format }}
-    Language: {{ site.lang }}
+    Language: {{ page.lang }}
     Standards: HTML5, CSS3, ES5
-    Components: Jekyll {{ jekyll.version }}, Bootstrap 4
+    Components: Jekyll {{ jekyll.version }}, Bootstrap 4.0.0-beta
     Software: Sublime Text 3, Adobe Creative Suite

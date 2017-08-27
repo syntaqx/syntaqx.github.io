@@ -1,10 +1,11 @@
-# [syntaqx.com](http://syntaqx.com/)
+# syntaqx
 
 [![Build Status](https://travis-ci.org/syntaqx/syntaqx.github.io.svg?branch=master)](https://travis-ci.org/syntaqx/syntaqx.github.io)
+[![license](https://img.shields.io/github/license/syntaqx/syntaqx.github.io.svg)](https://github.com/syntaqx/syntaqx.github.io)
 
 [LICENSE]: ./LICENSE
 
-Personal homepage and blog.
+See it live on https://syntaqx.com/
 
 ## Requirements
 
@@ -37,4 +38,5 @@ $ make serve
 
 ## License
 
-Distributed under the [MIT License][LICENSE].
+This is an open source project is available under the terms of the
+[MIT license][LICENSE].

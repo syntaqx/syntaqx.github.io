@@ -1,0 +1,17 @@
+{%- capture age -%}
+  {%- assign now        = 'now' | date: '%s' -%}
+  {%- assign postdate   = include.birthday | default 'now' | date: '%s' -%}
+  {%- assign epoch_diff = now | minus: postdate -%}
+
+  {%- assign time_second = 1 -%}
+  {%- assign time_minute = time_second | times:  60 -%}
+  {%- assign time_hour   = time_minute | times:  60 -%}
+  {%- assign time_day    = time_hour   | times:  24 -%}
+  {%- assign time_week   = time_day    | times:   7 -%}
+  {%- assign time_month  = time_day    | times:  30 -%}
+  {%- assign time_year   = time_day    | times: 365 -%}
+
+  {%- if epoch_diff > time_year -%}
+    {{- epoch_diff | divided_by: time_year -}}
+  {%- endif -%}
+{%- endcapture -%}

@@ -11,7 +11,12 @@ title: *name
 copyright: *name
 description: null
 email: syntaqx@gmail.com
-locale: en_US
+
+# Multilingual and i18n
+lang: "en"
+
+# Date settings
+date_format: "%b %-d, %Y"
 
 # url settings
 baseurl: ""                # the subpath of your site, e.g. /blog
@@ -37,7 +42,7 @@ social:
 analytics:
   google:
     type: "google" # must be either: google or universal (defaults to google)
-    tracking_id: ""
+    tracking_id: "UA-48212212-1"
 
 # Site verification codes
 site_verification:
@@ -48,7 +53,6 @@ site_verification:
 
 # Project rendering settings
 title_separator: "-"
-date_format: "%b %-d, %Y"
 
 # Conversion
 markdown: kramdown
@@ -60,21 +64,28 @@ kramdown:
 # Outputting
 permalink: /blog/:categories/:title
 paginate: 5
-paginate_path: "/blog/page:num"
+paginate_path: "/blog/page:num/"
 timezone: UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Handling Reading
 include: ["_pages"]
 
 # Collections
 collections:
+  archive:
+    output: true
+    permalink: /archive/:path/
   products:
     output: true
     permalink: /:collection/:name/
 
 # Defaults
 defaults:
+  # *
+  - scope:
+      path: ""
+    values:
+      lang: en
   # _posts
   - scope:
       path: ""
