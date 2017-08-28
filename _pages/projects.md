@@ -5,6 +5,35 @@ title: Projects
 
 <div class="container">
 
+  <div class="card-columns">
+    {% for repository in site.github.public_repositories %}
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="{{ repository.repository_url }}" target="_blank">{{ repository.name }}</a>
+            {% unless repository.homepage == "" %}
+              <a href="{{ repository.homepage }}" target="_blank"><i class="fa fa-external-link"></i></a>
+            {% endunless %}
+          </h4>
+          <p class="card-text">
+            <span class="badge badge-secondary">{{ repository.language }}</span>
+            <i class="fa fa-eye"></i> {{ repository.watchers_count }}
+            <i class="fa fa-star"></i> {{ repository.stargazers_count }}
+            <i class="fa fa-code-fork"></i> {{ repository.forks_count }}
+          </p>
+          <p class="card-text">{{ repository.description }}</p>
+          <p class="card-text">
+            <small class="text-muted">
+              Last updated <time class="timeago" datetime="{{ repository.updated_at | date_to_xmlschema }}" title="{{ repository.updated_at | date: site.date_format }}"></time>
+            </small>
+          </p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  {{ site.github.public_repositories }}
+
   <h2 class="mb-5">Standard Card Decks</h2>
 
   <div class="card-deck-wrapper">

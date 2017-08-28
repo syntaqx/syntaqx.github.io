@@ -32,4 +32,5 @@ group :test, :development do
   gem 'html-proofer'
   gem 'rake'
   gem 'rubocop'
+  gem 's3_website'
 end

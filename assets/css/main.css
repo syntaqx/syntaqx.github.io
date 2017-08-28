@@ -1,4 +1,4 @@
-body {
+fpobody {
   color: #515151;
 }
 
@@ -32,9 +32,23 @@ a:focus {
   list-style: none;
 }
 
+.post {
+  margin-top: 4rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-title,
+.post-title a {
+  color: #423F37;
+}
+
 .post-meta {
   padding: 0;
   list-style: none;
+  font-size: 14px;
 }
 
 .post-meta-item {
@@ -48,17 +62,16 @@ a:focus {
   margin-right: 5px;
 }
 
+.post-tags .badge {
+  padding: 6px 8px;
+  font-size: 13px;
+  font-weight: normal;
+}
 
 .search-results-list li {
   border-bottom: 1px solid #eee;
   margin: 0 0 1.5rem;
   padding: 0 0 1.5rem;
-}
-
-.search-results-list li:hover {
-  background-color: #f1f3f5;
-  border-color: transparent;
-  border-radius: 10px;
 }
 
 .search-result-url {

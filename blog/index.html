@@ -6,20 +6,21 @@ sitemap:
   priority: 1.0
 ---
 
+{% assign author = post.author | default: post.authors[0] | default: site.author %}
+{% assign author = site.data.authors[author] %}
+
 <div class="row">
   <div class="col">
 
     {% for post in paginator.posts %}
       <article>
         <header>
-          <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+          <h2 class="post-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
           <ul class="post-meta">
-            {% if post.category %}
-            <li class="post-meta-item"><a href="#" class="badge badge-secondary">{{ post.category }}</a></li>
-            {% endif %}
-            <li class="post-meta-item"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time></li>
-            {% assign author = post.author | default: post.authors[0] | default: site.author %}
-            {% assign author = site.data.authors[author] %}
+            <li class="post-meta-item">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+            </li>
+
             {% if author %}
             <li class="post-meta-item">
               <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -35,8 +36,8 @@ sitemap:
           {{ post.excerpt }}
         </div>
         <div class="text-right">
-          <a href="{{ post.url | absolute_url }}" class="btn btn-light" role="button">
-            Read More <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          <a href="{{ post.url | absolute_url }}" class="btn btn-outline-secondary" role="button">
+            Continue Reading <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
           </a>
         </div>
       </article>

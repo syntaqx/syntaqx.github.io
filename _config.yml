@@ -72,12 +72,6 @@ include: ["_pages"]
 
 # Collections
 collections:
-  archive:
-    output: true
-    permalink: /archive/:path/
-  products:
-    output: true
-    permalink: /:collection/:name/
 
 # Defaults
 defaults:
@@ -100,7 +94,6 @@ defaults:
       layout: page
 
 # Plugins (previously gems)
-# You can mimic GitHub Pages with --safe
 plugins:
   - jekyll-redirect-from
   - jekyll-paginate
