@@ -10,20 +10,20 @@ body {
   text-align: center;
 }
 
-.container {
-  margin-top: 10rem;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.container h1 {
-  font-size: 60px;
+.not-found {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 </style>
 
-<div class="container">
-  <h1>404</h1>
-  <p><strong>Page not found</strong></p>
-  <p>The requested page could not be found.</p>
-  <p><a href="{{ '/' | absolute_url }}" class="btn btn-outline-secondary">Return to Site</a></p>
+<div class="not-found">
+  <div>
+    <h1>404</h1>
+    <p><strong>Page not found</strong></p>
+    <p>The requested page could not be found.</p>
+    <p><a href="{{ '/' | absolute_url }}" class="btn btn-outline-secondary">Return to Site</a></p>
+  </div>
 </div>

@@ -2,9 +2,9 @@
 <nav aria-label="Blog pagination">
   <ul class="pagination justify-content-center">
 
-  {% if paginator.previous_page %}
+  {% if paginator.next_page %}
     <li class="page-item">
-      <a class="page-link" href="{{ paginator.previous_page_path | replace: '//', '/' }}">
+      <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
         <span>Older Posts</span>
       </a>
     </li>
@@ -12,6 +12,20 @@
     <li class="page-item disabled">
       <a class="page-link" href="#">
         <span>Older Posts</span>
+      </a>
+    </li>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
+        <span>Newer Posts</span>
+      </a>
+    </li>
+  {% else %}
+    <li class="page-item disabled">
+      <a class="page-link" href="#">
+        <span>Newer Posts</span>
       </a>
     </li>
   {% endif %}
@@ -27,20 +41,6 @@
     {% endif %}
   {% endfor %}
   {% endcomment %}
-
-  {% if paginator.next_page %}
-    <li class="page-item">
-      <a class="page-link" href="{{ paginator.next_page_path | replace: '//', '/' }}">
-        <span>Newer Posts</span>
-      </a>
-    </li>
-  {% else %}
-    <li class="page-item disabled">
-      <a class="page-link" href="#">
-        <span>Newer Posts</span>
-      </a>
-    </li>
-  {% endif %}
 
   </ul>
 </nav>

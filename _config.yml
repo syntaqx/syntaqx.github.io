@@ -61,9 +61,9 @@ kramdown:
   syntax_highlighter: rouge
 
 # Outputting
-permalink: /blog/:categories/:title
+permalink: /:categories/:title
 paginate: 5
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
 timezone: UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Handling Reading

@@ -31,12 +31,16 @@ title: Projects
     </div>
   </div>
 
-  <h2 class="text-center my-5">Open Source Projects</h2>
+  <div class="text-center my-5">
+    <h2>Open Source Projects</h2>
+    <p class="lead">Various projects I've built</p>
+  </div>
 
   {% assign repositories = site.github.public_repositories %}
   {% assign repositories = repositories | where_exp: 'item', 'item.full_name != site.github.repository_nwo' %}
   {% assign filtered = "" | split: "" %}
   {% for item in repositories %}
+    {% if item.fork == true %}{% continue %}{% endif %}
     {% unless item.description contains '[UNMAINTAINED]' %}
       {% assign filtered = filtered | push: item %}
     {% endunless %}
@@ -68,7 +72,7 @@ title: Projects
           <p class="card-text">{{ item.description }}</p>
         </div>
         <div class="card-footer">
-          <small class="text-muted">Last updated <time class="timeago" datetime="{{ item.updated_at | date_to_xmlschema }}" title="{{ item.updated_at | date: site.date_format }}"></time></small>
+          <small class="text-muted">Last updated {% include time.html datetime=item.updated_at classes="timeago" %}</small>
         </div>
       </div>
 

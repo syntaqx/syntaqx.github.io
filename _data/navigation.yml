@@ -1,28 +1,12 @@
 primary:
-  - title: "Blog"
-    url: "/blog/"
-
-  - title: "Tutorials"
-    url: "/tutorials/"
-
   - title: "Projects"
     url: "/projects/"
 
   - title: "About"
     url: "/about/"
 
-  - title: "Contact"
-    url: "/contact/"
-
   # - title: Dropdown Navigation
   #   url: "/probably-#/"
   #   children:
   #   - title: "Archived Posts"
   #     url: "/archive/"
-
-legal:
-  - title: "Privacy"
-    url: "/privacy/"
-
-  - title: "Terms"
-    url: "/terms/"

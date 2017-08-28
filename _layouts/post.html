@@ -11,7 +11,7 @@ layout: default
       <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
       <ul class="post-meta">
         <li class="post-meta-item">
-          <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</time>
+          {% include time.html datetime=page.date %}
         </li>
         {% if author %}
         <li class="post-meta-item">

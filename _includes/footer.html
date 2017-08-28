@@ -1,26 +1,4 @@
-{% include analytics.html %}
-
-{% assign copyright = site.copyright | default: "" | markdownify | remove: '<p>' | remove: '</p>' %}
-
 <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <span class="text-muted">
-              &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="col">
-        <ul class="list-inline text-right">
-          {% for item in site.data.navigation.legal %}
-          <li class="list-inline-item"><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
+  <p>Made with <i class="fa fa-heart"></i> by <a href="{{ '/' | absolute_url }}">@syntaqx</a></p>
+  <p>Open sourced under the MIT license. Copyright &copy; {% include time.html datetime=site.time format="%Y" %}. All rights reserved.</p>
 </footer>

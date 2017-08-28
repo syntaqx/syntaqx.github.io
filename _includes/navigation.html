@@ -15,7 +15,7 @@
 
           {% if item.children == null %}
           <li class="nav-item {{ active }}">
-            <a class="nav-link" href="{{ item.url | relative_url }}" itemprop="url">
+            <a class="nav-link" href="{{ item.url | absolute_url }}" itemprop="url">
               <span itemprop="name">{{ item.title }}</span>
             </a>
           </li>
