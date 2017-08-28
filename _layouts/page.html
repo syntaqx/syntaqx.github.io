@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<header class="jumbotron">
+<header class="jumbotron jumbotron-fluid">
   <div class="container">
     <div class="page-heading text-center">
       <h1>{{ page.title | escape }}</h1>
@@ -11,10 +11,10 @@ layout: default
   </div>
 </header>
 
-<main id="main" class="container" aria-label="Content">
+<div class="container">
   <article>
     <div class="page-content">
       {{ content }}
     </div>
   </article>
-</main>
+</div>

@@ -5,5 +5,5 @@
   {% assign read_time = words | plus: 250 | divided_by: 180 | append: " minute read" %}
 {% endunless %}
 {% if read_time %}
-<span class="reading-time" title="{{ read_time }}">{{ read_time }}</span>
+  <span class="reading-time" title="{{ read_time }}">{{ read_time }}</span>
 {% endif %}

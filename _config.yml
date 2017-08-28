@@ -6,14 +6,13 @@
 # local server.
 
 # Project settings
-name: &name syntaqx
-title: *name
-copyright: *name
+title: &title syntaqx
 description: null
-email: syntaqx@gmail.com
+lang: "en-US"
 
-# Multilingual and i18n
-lang: "en"
+# Compatibility named variables
+# These exist to provide consistency with expectations from plugins.
+name: *title
 
 # Date settings
 date_format: "%b %-d, %Y"

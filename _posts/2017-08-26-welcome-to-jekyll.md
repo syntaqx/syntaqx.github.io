@@ -1,6 +1,5 @@
 ---
 title: Welcome to Jekyll
-date: 2017-08-27T07:51:39+00:00
 category: testing
 tags: [github, github-pages, jekyll, testing]
 ---

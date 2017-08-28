@@ -1,15 +1,4 @@
-fpobody {
-  color: #515151;
-}
-
-a {
-  color: #375EAB;
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
+/* Sticky Footer */
 
 .flex-layout {
   display: flex;
@@ -18,19 +7,25 @@ a:focus {
 }
 
 .flex-content {
-  padding: 56px 0 50px;
+  padding: 5em 0 50px;
   flex: 1;
 }
+
+/* Navbar */
+
+#navbar-primary {
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f2;
+  min-height: 5rem;
+}
+
+/* Syntax Highlighting */
 
 .highlight {
   padding: 15px;
 }
 
-.search-results-list ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+/* Post */
 
 .post {
   margin-top: 4rem;
@@ -55,17 +50,26 @@ a:focus {
   margin: 0;
   padding: 0;
   display: inline-block;
-  color: #868e96;
+  color: #b3b3b1;
 }
 
-.post-meta-item:not(:last-child) {
-  margin-right: 5px;
+.post-meta-item::before,
+.post-meta-item::after {
+  margin: 0 0.25rem;
+  display: inline;
+  color: #9b9aa1;
 }
 
-.post-tags .badge {
-  padding: 6px 8px;
-  font-size: 13px;
-  font-weight: normal;
+.post-meta-item:not(:last-child)::after {
+  content: "–";
+}
+
+/* Search Results */
+
+.search-results-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .search-results-list li {
@@ -83,15 +87,43 @@ a:focus {
   margin-bottom: 0;
 }
 
+/* Article Feeds Line */
+
 .article-feeds {
   text-align: center;
 }
 
-.main-footer {
-  background: #f2f2f2;
+/* Projects */
+
+.project-stats {
+  font-size: 14px;
+  color: #868e96;
+}
+
+.project-stats a {
+  color: #868e96;
+}
+
+.project-stats a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.project-stats .list-inline-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Footer */
+
+.footer {
+  background: #29292c;
   padding: 24px 0;
 }
 
-.main-footer .list-inline {
+.footer a {
+  color: #9b9aa1;
+}
+
+.footer .list-inline {
   margin-bottom: 0;
 }

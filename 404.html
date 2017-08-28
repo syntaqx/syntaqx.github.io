@@ -1,8 +1,29 @@
 ---
-layout: none
+layout: scratch
 sitemap: false
 ---
 
-<h1>404</h1>
-<p><strong>Page not found :(</strong></p>
-<p>The requested page could not be found.</p>
+<style>
+
+body {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.container {
+  margin-top: 10rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+  font-size: 60px;
+}
+
+</style>
+
+<div class="container">
+  <h1>404</h1>
+  <p><strong>Page not found</strong></p>
+  <p>The requested page could not be found.</p>
+  <p><a href="{{ '/' | absolute_url }}" class="btn btn-outline-secondary">Return to Site</a></p>
+</div>

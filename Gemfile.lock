@@ -265,7 +265,6 @@ DEPENDENCIES
   rake
   rubocop
   s3_website
-  tzinfo-data
 
 BUNDLED WITH
    1.15.4

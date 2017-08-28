@@ -2,13 +2,15 @@
 
 {% assign copyright = site.copyright | default: "" | markdownify | remove: '<p>' | remove: '</p>' %}
 
-<footer class="main-footer">
+<footer class="footer">
   <div class="container">
     <div class="row">
       <div class="col">
         <ul class="list-inline">
           <li class="list-inline-item">
-            <span class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ copyright }}</span>
+            <span class="text-muted">
+              &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+            </span>
           </li>
         </ul>
       </div>
