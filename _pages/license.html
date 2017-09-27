@@ -24,6 +24,20 @@ title: License
       IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
       CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
     </div>
-    <p><a href="{{ '/' | absolute_url }}" class="btn btn-outline-secondary">Return to Site</a></p>
+    <p><a id="btn-return" href="{{ '/' | absolute_url }}" class="btn btn-outline-secondary">Return to Site</a></p>
   </div>
 </div>
+
+<script>
+
+  if (document.referrer) {
+    var btn = document.getElementById('btn-return');
+    try {
+      if (document.referrer.match(/:\/\/([^/]+)\//)[1] == 'github.com') {
+        btn.ref = 'nofollow';
+        btn.href = referrer;
+      }
+    } catch (e) {}
+  }
+
+</script>
