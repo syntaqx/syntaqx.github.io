@@ -1,6 +1,0 @@
-chase:
-  name: Chase Hutchins
-  uri: &uri "https://syntaqx.com/"
-  url: *uri
-  twitter: syntaqx
-  github: https://github.com/syntaqx

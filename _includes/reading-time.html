@@ -1,6 +1,0 @@
-{% capture words %}
-  {{ page.content | number_of_words | minus: 250 }}
-{% endcapture %}
-{% if words contains "-" %}{% assign words = 1 %}{% endif %}
-{% assign read_time = words | plus: 250 | divided_by: 180 | default: "Less than a" | append: " minute read" %}
-<span class="reading-time" title="{{ read_time }}">{{ read_time }}</span>

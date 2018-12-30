@@ -1,7 +1,0 @@
-{% if site.analytics.google.tracking_id and site.analytics.google.tracking_id != "" %}
-  {% if site.analytics.google.type == "universal" %}
-    {% include analytics/google-universal.html %}
-  {% else %}
-    {% include analytics/google.html %}
-  {% endif %}
-{% endif %}
