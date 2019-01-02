@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/syntaqx
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://syntaqx.com
+  * I am syntaqx (https://keybase.io/syntaqx) on keybase.
+  * I have a public key ASCcA-f50dv386-hZHUX7naySmILHAVHX0PbuQzEyQaP1Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209c03e7f9d1dbf7f3afa1647517ee76b24a620b1c05475f43dbb90cc4c9068fd50a",
+      "host": "keybase.io",
+      "kid": "01209c03e7f9d1dbf7f3afa1647517ee76b24a620b1c05475f43dbb90cc4c9068fd50a",
+      "uid": "dd2ef97d26c4708db213f2acbcb35d19",
+      "username": "syntaqx"
+    },
+    "merkle_root": {
+      "ctime": 1546468781,
+      "hash": "aa3554d6a68e643de6cb7e33f92c619b758b1b42ec81b3f948c3a8c327eb4ec48f172af5d8e716d67c3b351ad679480af7f2206658536ae422f36128830c3762",
+      "hash_meta": "225221c312b99960267f462eab959b7aa7da083eefff1c09d645b824168da3f1",
+      "seqno": 4222494
+    },
+    "service": {
+      "entropy": "F8J6DAhc6GI/CEgK+ccfU9/D",
+      "hostname": "syntaqx.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.12.3"
+  },
+  "ctime": 1546468788,
+  "expire_in": 504576000,
+  "prev": "826a3700c453413cfc519e359b7c15a7e8320f1d9177b264b61f8ce7fbaa584e",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgnAPn+dHb9/OvoWR1F+52skpiCxwFR19D27kMxMkGj9UKp3BheWxvYWTESpcCBsQggmo3AMRTQTz8UZ41m3wVp+gyDx2Rd7Jkth+M5/uqWE7EILyKH0PYVRPkaM/4pdSG+AEwrjnOSAVA4lbEzicDlXgbAgHCo3NpZ8RADsFXG4qs0OC+Ri+KTTCARO7jw1XRrlq/3S8hagaz9k7AP8IYHFqD7igsWi5YNyoMi9B4rRphknC//vZ7drXcDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINDS5kFQVe2Xx+bBV80TwWJ+Vr4oPhhUqx2+dMsr74y5o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/syntaqx
+
+==================================================================
