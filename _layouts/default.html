@@ -1,0 +1,25 @@
+---
+layout: baseof
+---
+
+{% include navbar.html nav="main" %}
+
+{{ content }}
+
+<footer class="app-footer text-muted mt-auto">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <ul class="list-inline">
+          <li class="list-inline-item">&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul class="list-inline text-right">
+          <li class="list-inline-item"><a href="#">Status</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+

@@ -1,0 +1,75 @@
+locale: "en-US"
+timezone: America/Denver
+title: syntaqx
+title_separator: "-"
+
+github: [metadata]
+repository: syntaqx/syntaqx.github.io
+
+analytics:
+  google: UA-141192690-1
+
+twitter:
+  username: syntaqx
+facebook:
+  username:
+  app_id:
+  publisher:
+og_image: /assets/img/fallback-social-preview.png
+social:
+  type: Person
+  name: Chase Pierce
+  links:
+    - https://keybase.io/syntaqx
+    - https://twitter.com/syntaqx
+    - https://www.linkedin.com/in/syntaqx/
+    - https://github.com/syntaqx
+
+webmaster_verifications:
+  google: 196131356
+
+collections:
+  components:
+    output: true
+    permalink: /components/:path/
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/img/fallback-social-preview.png
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+excerpt_separator: |2+
+
+exclude:
+  - Gemfile*
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache

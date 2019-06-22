@@ -1,0 +1,13 @@
+main:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Talks
+    url: /talks/
+  - title: Projects
+    url: /projects/
+  - title: Components
+    url: /components/
+  - title: Contact
+    url: /contact/
