@@ -1,5 +1,5 @@
 ---
-title: Components
+title: UI Components
 ---
 
 <ul>

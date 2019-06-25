@@ -1,7 +1,5 @@
-locale: "en-US"
-timezone: America/Denver
+locale: en-US
 title: syntaqx
-title_separator: "-"
 
 github: [metadata]
 repository: syntaqx/syntaqx.github.io
@@ -15,7 +13,7 @@ facebook:
   username:
   app_id:
   publisher:
-og_image: /assets/img/fallback-social-preview.png
+og_image: /assets/img/og-fallback.png
 social:
   type: Person
   name: Chase Pierce
@@ -41,35 +39,60 @@ defaults:
       path: ""
     values:
       layout: default
-      image: /assets/img/fallback-social-preview.png
+      image: /assets/img/og-fallback.png
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: page
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-highlighter: rouge
-excerpt_separator: |2+
-
 exclude:
   - Gemfile*
   - README.md
 
+# Plugins which are activated
 plugins:
-  - jekyll-feed
-  - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-sitemap
+- jekyll-coffeescript
+- jekyll-commonmark-ghpages
+- jekyll-gist
+- jekyll-github-metadata
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-relative-links
+- jekyll-optional-front-matter
+- jekyll-readme-index
+- jekyll-default-layout
+- jekyll-titles-from-headings
 
-# mimic GitHub Pages with --safe
+# Plugins allowed by GitHub Pages
 whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
+- jekyll-coffeescript
+- jekyll-commonmark-ghpages
+- jekyll-feed
+- jekyll-gist
+- jekyll-github-metadata
+- jekyll-paginate
+- jekyll-redirect-from
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-avatar
+- jemoji
+- jekyll-mentions
+- jekyll-relative-links
+- jekyll-optional-front-matter
+- jekyll-readme-index
+- jekyll-default-layout
+- jekyll-titles-from-headings
+- jekyll-include-cache
+- jekyll-octicons
+- jekyll-remote-theme
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true

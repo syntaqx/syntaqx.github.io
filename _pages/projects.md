@@ -1,6 +1,7 @@
 ---
-title: Projects
 ---
+
+# Projects
 
 <div class="card-columns">
   <div class="card">
