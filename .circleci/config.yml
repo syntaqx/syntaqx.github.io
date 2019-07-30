@@ -22,6 +22,9 @@ jobs:
 
 workflows:
   version: 2
+  commit:
+    jobs:
+      - generate_ips
   nightly:
     triggers:
       - schedule:
