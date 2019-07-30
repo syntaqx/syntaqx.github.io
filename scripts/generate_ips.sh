@@ -3,20 +3,18 @@ set -eo pipefail
 [[ $TRACE ]] && set -x
 
 # Domain lookup target
-DOMAIN=${DOMAIN:-"subdomain.ddns.host"}
+DOMAIN=${DOMAIN:-"syntaqx.mynetgear.com"}
+DYNDNS=$(dig +short "$DOMAIN")
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-OUTFILE=$(realpath "$DIR/../ips.md")
+OUTFILE=$(realpath "$DIR/../_data/ips.yaml")
 
-# Reset the file
-cat <<EOT > "$OUTFILE"
+# Overwrite previous IP data
+cat > "$OUTFILE" <<EOF
 ---
-layout: null
-permalink: ips.json
----
-EOT
 
-# Output as pretty JSON
-jq -n \
-  --arg ipv4_addr "$(dig +short "$DOMAIN")" \
-  '{ipv4: [ $ipv4_addr + "/32" ], updated_at: now | gmtime | todate}' >> "$OUTFILE"
+- name: dyndns-netgear
+  addr: $DYNDNS/32
+
+EOF
+

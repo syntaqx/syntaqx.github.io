@@ -9,7 +9,6 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints: ["19:19:21:4e:7f:fb:d4:7d:97:92:95:40:c9:a1:f0:5c"]
-      - run: ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
       - run:
           name: Configure Git client
           command: |

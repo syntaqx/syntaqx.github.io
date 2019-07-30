@@ -1,0 +1,5 @@
+---
+
+- name: dyndns-netgear
+  addr: 174.52.51.71/32
+
