@@ -8,11 +8,11 @@ jobs:
     steps:
       - checkout
       - add_ssh_keys:
-          fingerprints: ["a6:c2:89:37:50:ad:0b:0f:b7:3d:8a:95:6a:0e:8a:94"]
+          fingerprints: ["19:19:21:4e:7f:fb:d4:7d:97:92:95:40:c9:a1:f0:5c"]
+      - run: ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
       - run:
-          name: Configure Git & SSH
+          name: Configure Git client
           command: |
-            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
             git config user.email "build@circleci.com"
             git config user.name "Automated CircleCI Build"
       - run:
