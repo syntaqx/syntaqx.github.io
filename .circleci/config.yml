@@ -9,16 +9,22 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints: ["a6:c2:89:37:50:ad:0b:0f:b7:3d:8a:95:6a:0e:8a:94"]
-      - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
-      - run: |
-          git config user.email "circleci@syntaqx.com"
-          git config user.name "CircleCI Generator"
-      - run: |
-          chmod +x ./scripts/generate_ips.sh
-          ./scripts/generate_ips.sh
-      - run: |
-          git commit -am 'Automated deployment from CircleCI [skip ci]'
-          git push -q
+      - run:
+          name: Configure Git & SSH
+          command: |
+            ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+            git config user.email "build@circleci.com"
+            git config user.name "Automated CircleCI Build"
+      - run:
+          name: Generate & update IP list
+          command: |
+            chmod +x ./scripts/generate_ips.sh
+            ./scripts/generate_ips.sh
+      - run:
+          name: Git commit and push
+          command: |
+            git commit -am 'Automated deployment from CircleCI [skip ci]'
+            git push -q
 
 workflows:
   version: 2
@@ -33,6 +39,5 @@ workflows:
             branches:
               only:
                 - master
-                - beta
     jobs:
       - generate_ips
