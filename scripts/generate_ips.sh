@@ -12,9 +12,8 @@ OUTFILE=$(realpath "$DIR/../ips.md")
 cat <<EOT > "$OUTFILE"
 ---
 layout: null
-permalink: /ips.json
+permalink: ips.json
 ---
-
 EOT
 
 # Output as pretty JSON
