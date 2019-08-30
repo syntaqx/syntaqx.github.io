@@ -1,5 +1,5 @@
 ---
 
 - name: dyndns-netgear
-  addr: 69.252.69.200/32
+  addr: 174.52.51.71/32
 
