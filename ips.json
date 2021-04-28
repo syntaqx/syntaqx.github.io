@@ -1,9 +1,0 @@
----
-layout: null
-permalink: ips.json
----
-
-{
-  "ips": {{ site.data.ips | jsonify }},
-  "updated_at": "{{ site.time }}"
-}
