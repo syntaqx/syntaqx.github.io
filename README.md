@@ -1,3 +1,3 @@
 # syntaqx
 
-Work in progress, round 4?
+> 🚧 Personal Site - Round 4 or 5, idk anymore.
