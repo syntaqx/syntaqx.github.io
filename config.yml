@@ -1,5 +1,6 @@
 baseURL: "https://syntaqx.com/"
 title: syntaqx
+copyright: Chase Pierce
 paginate: 5
 theme: hugo-PaperMod
 
