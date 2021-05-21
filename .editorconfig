@@ -1,4 +1,3 @@
-# editorconfig.org
 root = true
 
 [*]
@@ -9,7 +8,7 @@ indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.md]
+[*.{md,markdown}]
 trim_trailing_whitespace = false
 
 [*.go]
@@ -21,3 +20,7 @@ indent_style = tab
 
 [LICENSE]
 insert_final_newline = false
+
+# DOS/Win *requires* BAT/CMD files to have CRLF newlines
+[*.{[Bb][Aa][Tt],[Cc][Mm][Dd]}]
+end_of_line = crlf

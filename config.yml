@@ -80,6 +80,8 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/syntaqx"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/syntaqx/"
     - name: KoFi
       url: "https://ko-fi.com/syntaqx"
 
