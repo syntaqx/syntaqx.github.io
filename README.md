@@ -1,3 +1,4 @@
-# syntaqx
+# Chase Pierce!
 
-> 🚧 Personal Site - Round 4 or 5, idk anymore.
+Gamer, software engineer, devops architect, enjoyer of beverages. Your favorite
+internet junkie with a love of all things digital and bacon-based.
