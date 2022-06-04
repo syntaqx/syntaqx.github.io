@@ -5,6 +5,12 @@
 Gamer, software engineer, devops architect, enjoyer of beverages. Your favorite
 internet junkie with a love of all things digital and bacon-based.
 
+## Links
+
+- [Recipes](https://syntaqx.com/recipes)
+
+## Identities
+
 - [GitHub](https://github.com/syntaqx)
 - [LinkedIn](https://www.linkedin.com/in/syntaqx)
 - [Twitter](https://twitter.com/syntaqx)
