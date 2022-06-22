@@ -7,7 +7,8 @@ internet junkie with a love of all things digital and bacon-based.
 
 ## Links
 
-- [Recipes](https://syntaqx.com/recipes)
+- [Contact](/contact)
+- [Recipes](/recipes)
 
 ## Identities
 
@@ -20,3 +21,8 @@ internet junkie with a love of all things digital and bacon-based.
 - [Reddit](https://www.reddit.com/user/syntaqx/)
 - [Pinterest](https://www.pinterest.com/syntaqx)
 - [Twitch](https://www.twitch.tv/syntaqx)
+
+# Legalities (sort of?)
+
+- [Privacy](/privacy)
+- [Terms](/terms)
