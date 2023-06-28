@@ -2,8 +2,7 @@
 
 > I'm syntaqx (`/ˈsɪnˌtæks/`)
 
-Gamer, software engineer, devops architect, enjoyer of beverages. Your favorite
-internet junkie with a love of all things digital and bacon-based.
+Gamer, software architect, enjoyer of beverages. Your favorite internet junkie with a love of all things digital and bacon-based.
 
 ## Links
 
