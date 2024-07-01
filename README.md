@@ -4,6 +4,8 @@
 
 Gamer, software architect, enjoyer of beverages. Your favorite internet junkie with a love of all things digital and bacon-based.
 
+`syntaqx@gmail.com`
+
 ## Links
 
 - [Contact](/contact)
