@@ -1,0 +1,88 @@
+baseURL = 'https://syntaqx.com/'
+languageCode = 'en-us'
+title = 'Chase Pierce'
+theme = 'archie'
+
+copyright = '© Chase Pierce'
+
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+paginate=4 # articles per page
+
+ignoreLogs = ['err-youtube-remote']
+
+[blackfriday]
+plainIDAnchors = true
+hrefTargetBlank = true
+
+[outputs]
+home = ["HTML", "RSS", "ACTIVITY", "ACTIVITY_OUTBOX"]
+section = ["HTML", "RSS", "ACTIVITY", "ACTIVITY_OUTBOX"]
+page = ["HTML"]
+
+[related]
+threshold = 10
+includeNewer = true
+toLower = false
+
+[[related.indices]]
+name = "tags"
+weight = 100
+
+[markup.goldmark.parser]
+autoHeadingID = true
+
+[markup.goldmark.extensions]
+typographer = false
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[minify]
+minifyOutput = true
+
+[permalinks]
+fixed = ":title/"
+blog  = ":slug"
+
+[params]
+author = "Chase Pierce"
+mode="toggle" # color-mode → light,dark,toggle or auto
+useCDN=true # don't use CDNs for fonts and icons, instead serve them locally.
+subtitle = "Gamer, software architect, enjoyer of beverages. Your favorite internet junkie with a love of all things digital and bacon-based."
+mathjax = false # enable MathJax support
+katex = false # enable KaTeX support
+customcss = ["/css/custom.css"]
+
+# Social
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/syntaqx"
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/syntaqx/"
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/syntaqx"
+
+# Main menu Items
+[[menu.main]]
+name = "home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "all posts"
+url = "/blog"
+weight = 3
+
+[[menu.main]]
+name = "about"
+url = "/about"
+weight = 5

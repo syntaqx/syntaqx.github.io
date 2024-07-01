@@ -2,6 +2,5 @@
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120,
-    "editor.wordBasedSuggestions": false
   }
 }
