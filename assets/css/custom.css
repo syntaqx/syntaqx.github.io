@@ -25,6 +25,7 @@ a:hover {
 
 .navbar-brand:hover {
   background-color: transparent;
+  opacity: 0.8;
 }
 
 .navbar-brand img {
