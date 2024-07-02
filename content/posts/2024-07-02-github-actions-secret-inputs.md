@@ -190,9 +190,9 @@ Which surprisingly worked! The value was masked and never exposed in the logs!
 SECRET_KEY=***
 ```
 
-While this solution isn't perfect (I mean, I could always just echo `$RESPONSE`
-_before_ I mask it if I was being malicious), assuming proper pull requests and
-code reviews, this solution should be secure enough for my use case.
+Now it would just be a matter of cleaning up my bash to ensure that unexpected
+errors (or incorrectly entered URLs) would be handled gracefully. We have a path
+forward.
 
 ## Conclusion
 
