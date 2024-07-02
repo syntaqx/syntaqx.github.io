@@ -133,9 +133,9 @@ without exposing the value until after it was masked. The solution?
 
 > A simple one-time link that would provide the secret value workflow.
 
-To initially test my theory, I added a very straightforward API to my personal
-API that would behave like most secret sharing services, but without me having
-to bother picking (or paying for) one:
+To initially test my theory, I added a very straightforward handler to my
+personal API that would behave like most secret sharing services, but without me
+having to bother picking (or paying for) one until I knew this could work:
 
 - `POST https://api.syntaqx.com/secrets` - Create a new secret
 - `GET https://api.syntaqx.com/secrets/{id}` - Retrieve a secret
