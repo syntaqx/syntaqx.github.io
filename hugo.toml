@@ -4,6 +4,7 @@ copyright = '© Chase Pierce'
 title = 'Chase Pierce'
 theme = 'archie'
 
+enableRobotsTXT = true
 googleAnalytics = "G-VYBYBGG5X8"
 disqusShortname = "syntaqx"
 
