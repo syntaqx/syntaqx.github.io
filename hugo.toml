@@ -49,7 +49,7 @@ minifyOutput = true
 
 [permalinks]
 fixed = ":title/"
-blog  = "blog/:slug"
+posts = "posts/:slug"
 
 [params]
 author = "Chase Pierce"
@@ -59,7 +59,7 @@ subtitle = "Gamer, software architect, enjoyer of beverages. Your favorite inter
 mathjax = false # enable MathJax support
 katex = false # enable KaTeX support
 customcss = ["/css/custom.css"]
-mainSections = ['blog']
+mainSections = ['posts']
 
 # Social
 [[params.social]]
@@ -83,7 +83,7 @@ weight = 1
 
 [[menu.main]]
 name = "all posts"
-url = "/blog"
+url = "/posts"
 weight = 2
 
 [[menu.main]]
