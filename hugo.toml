@@ -49,7 +49,7 @@ minifyOutput = true
 
 [permalinks]
 fixed = ":title/"
-blog  = ":slug"
+blog  = "blog/:slug"
 
 [params]
 author = "Chase Pierce"
