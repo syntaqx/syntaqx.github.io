@@ -19,6 +19,20 @@ a:hover {
   color: var(--bgcolor) !important;
 }
 
+.navbar-brand {
+  border: 0;
+}
+
+.navbar-brand:hover {
+  background-color: transparent;
+}
+
+.navbar-brand img {
+  border: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* list box */
 .list-item {
   border: 1px solid var(--bordercl);
