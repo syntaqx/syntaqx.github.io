@@ -1,22 +1,3 @@
-+++
-date = "2024-07-01"
-title = "Hello, world!"
-tags = ["hello-world"]
-+++
-
-Hello, world!
-
-I believe this is round 4 of creating, refactoring, or otherwise restarting my
-website and blog; honestly, I've lost count.
-
-I've been wanting to write more, and I've been wanting to have a place to write
-that isn't Twitter or some other social media platform. I've tried a few times
-to start a blog, but I've always ended up abandoning it for one reason or
-another. This time, I'm hoping to stick with it.
-
-So, hello again.
-
-```
 package main
 
 import (
@@ -51,4 +32,3 @@ func main() {
 		}
 	}
 }
-```
