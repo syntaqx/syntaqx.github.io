@@ -15,12 +15,13 @@ One of the features that I've been using a lot lately is [manually triggered][]
 workflows, allowing me to create self-service workflows that can be triggered on
 demand, saving us from repetitive tasks; one automation at a time.
 
+[manually triggered]: https://docs.github.com/actions/using-workflows/manually-running-a-workflow
+
 A simple example of these self-service workflow would be one that allows
 engineers to update their own environnment variables for a service. The team can
 simply go to our `ops` repositories Actions, and manually trigger the workflow
 with the service name, environment, key, and value as inputs:
 
-[manually triggered]: https://docs.github.com/actions/using-workflows/manually-running-a-workflow
 
 ```yaml
 name: Upsert Environment Variable
