@@ -213,7 +213,7 @@ Honestly, I'm pretty happy with the solution, but I'm not happy that I had to
 come up with it. I would love to see GitHub support dynamic secrets in workflows
 so that I don't have to jump through hoops to keep my secrets secret.
 
-Until then, I'll keep using this solution, and hope that it helps someone else.
+Until then, I'll keep using this, annd hope that it helps someone else.
 
 ## Open Letter to GitHub
 
