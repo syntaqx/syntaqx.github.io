@@ -50,7 +50,7 @@ blog  = ":slug"
 
 [params]
 author = "Chase Pierce"
-mode="toggle" # color-mode → light,dark,toggle or auto
+mode="auto" # color-mode → light,dark,toggle or auto
 useCDN=true # don't use CDNs for fonts and icons, instead serve them locally.
 subtitle = "Gamer, software architect, enjoyer of beverages. Your favorite internet junkie with a love of all things digital and bacon-based."
 mathjax = false # enable MathJax support
