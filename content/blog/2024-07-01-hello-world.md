@@ -16,7 +16,7 @@ another. This time, I'm hoping to stick with it.
 
 So, hello again.
 
-```
+```go
 package main
 
 import (
