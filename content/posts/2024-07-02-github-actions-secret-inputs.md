@@ -205,7 +205,7 @@ forward.
 
 ## Conclusion
 
-While this solution isn't perfect (I mean, I could also just `echo $RESPONSE`
+While this solution isn't perfect (I mean, I could easily just `echo $RESPONSE`
 before I mask it), assuming proper pull requests and code reviews, this solution
 should be secure enough for my use case.
 
