@@ -60,13 +60,13 @@ jobs:
 
 And that's it! No more asking operations to update your environment variables.
 
-> __Note:__ Sure, this would be easy enough to just manage within a project's
-> repository if we were deployed entirely on Kubernetes, but we're not quite
-> there yet. Depending on the service, updating an environment variable may be
-> as simple as updating a secret in AWS Secrets Manager, or as complex as
-> updating a file on an EC2 instance. This workflow allows us to abstract that
-> complexity away from the engineers, and let them focus on what they do best:
-> writing code.
+> __Note:__ In a more ideal world, we could just "shift left" and repostories
+> would be able to manage their own Kubernetes manifests, and update their own
+> environment variables or ConfigMap. Unfortunately, we're not quite there yet.
+> Depending on the service, updating an environment variable may be as simple as
+> updating a secret in AWS Secrets Manager, or as complex as updating a file on
+> an EC2 instance. This workflow allows us to abstract that complexity away from
+> the engineers, and let them focus on what they do best: writing code.
 
 Automation, done.
 
