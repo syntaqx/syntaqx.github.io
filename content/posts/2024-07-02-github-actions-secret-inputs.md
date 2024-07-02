@@ -133,9 +133,9 @@ without exposing the value until after it was masked. The solution?
 
 A simple one-time link that would provide the secret value workflow.
 
-To initially test my theory, I added a very straightforward handler to my
-personal API that would behave like most secret sharing services, but without me
-having to bother picking (or paying for) one until I knew this could work:
+To initially test my theory, I added a simple handler to my personal API that
+would behave like most secret sharing services, but without me having to bother
+picking (or paying for) one until I knew this could work:
 
 - `POST https://api.syntaqx.com/secrets` - Create a new secret
 - `GET https://api.syntaqx.com/secrets/{id}` - Retrieve a secret
@@ -144,9 +144,9 @@ having to bother picking (or paying for) one until I knew this could work:
 > real security or reliability. The values are stored in memory, the encryption
 > is weak, and you should not rely on these endpoinnts for real world use.
 >
-> We ended up going with [Yopass](https://yopass.se/) for our final workflow,
-> which gave Engineers a UI to easily paste their secrets and get a one-time
-> link to retrieve them.
+> We ended up going with [Yopass](https://yopass.se/) in our final workflow,
+> which gave Engineers a UI to easily paste their secrets into and get a
+> one-time link to retrieve them without the need for a script.
 >
 > Choose your own adventure.
 
