@@ -13,7 +13,7 @@ too easy to get what I need.
 
 One of the features that I've been using a lot lately is [manually triggered][]
 workflows, allowing me to create self-service workflows that can be triggered on
-demand, saving us from repetitive tasks one automation at a time.
+demand, saving us from repetitive tasks; one automation at a time.
 
 A simple example of these self-service workflow would be one that allows
 engineers to update their own environnment variables for a service. The team can
@@ -64,7 +64,7 @@ And that's it! No more asking operations to update your environment variables.
 > there yet. Depending on the service, updating an environment variable may be
 > as simple as updating a secret in AWS Secrets Manager, or as complex as
 > updating a file on an EC2 instance. This workflow allows us to abstract that
-> complexity away from > the engineers, and let them focus on what they do best:
+> complexity away from the engineers, and let them focus on what they do best:
 > writing code.
 
 Automation, done.
