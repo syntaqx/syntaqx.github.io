@@ -193,7 +193,7 @@ jobs:
           echo "${{ github.event.inputs.key }}=${{ steps.secret.outputs.value }}"
 ```
 
-Which surprisingly worked! The value was masked and never exposed in the logs!
+Which surprisingly worked! The value was masked and never exposed in the logs.
 
 ```sh
 SECRET_KEY=***
