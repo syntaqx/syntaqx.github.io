@@ -205,7 +205,7 @@ forward.
 
 ## Conclusion
 
-While this isn't perfect (I or anyone could easily just modify the workflow to
+While this isn't perfect (anyone could easily just modify the workflow to
 `echo $RESPONSE` before the value is masked), assuming proper pull requests and
 code reviews, this solution should be secure enough for my use case.
 
