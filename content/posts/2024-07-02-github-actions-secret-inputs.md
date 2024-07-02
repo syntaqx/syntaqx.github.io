@@ -205,9 +205,9 @@ forward.
 
 ## Conclusion
 
-While this isn't perfect (I mean, I or anyone could easily just `echo $RESPONSE`
-before the value is masked), assuming proper pull requests and code reviews,
-this solution should be secure enough for my use case.
+While this isn't perfect (I or anyone could easily just modify the workflow to
+`echo $RESPONSE` before the value is masked), assuming proper pull requests and
+code reviews, this solution should be secure enough for my use case.
 
 Honestly, I'm pretty happy with the solution, but I'm not happy that I had to
 come up with it. I would love to see GitHub support dynamic secrets in workflows
