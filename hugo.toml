@@ -90,4 +90,4 @@ weight = 3
 [[menu.main]]
 name = "about"
 url = "/about"
-weight = 5
+weight = 4
