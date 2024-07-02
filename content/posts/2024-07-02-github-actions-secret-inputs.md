@@ -131,7 +131,7 @@ After a reasonable amount of trial and error, and so much searching, I came up
 with a fairly straightforward solution that allowed me to have a dynamic input
 without exposing the value until after it was masked. The solution?
 
-> A simple one-time link that would provide the secret value workflow.
+A simple one-time link that would provide the secret value workflow.
 
 To initially test my theory, I added a very straightforward handler to my
 personal API that would behave like most secret sharing services, but without me
