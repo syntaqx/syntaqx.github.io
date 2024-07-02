@@ -78,6 +78,11 @@ url = "/"
 weight = 1
 
 [[menu.main]]
+name = "projects"
+url = "/projects"
+weight = 2
+
+[[menu.main]]
 name = "all posts"
 url = "/blog"
 weight = 3
