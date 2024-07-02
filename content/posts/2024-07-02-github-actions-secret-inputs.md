@@ -135,17 +135,21 @@ to bother picking (or paying for) one:
 - `POST https://api.syntaqx.com/secrets` - Create a new secret
 - `GET https://api.syntaqx.com/secrets/{id}` - Retrieve a secret
 
-> __Warning:__ These were just for demonstration purposes, and do not provide
-> any real security of you data. The values are stored in memory, and you should
-> not use these endpoints for a real implementation. We ended up going with
-> [Yopass](https://yopass.se/) for our final implementation, but choose your
-> own adventure here.
+> __Warning:__ While this API is real, it is onnly meant as a demonstration API
+> and does not provide any real security or reliability. The values are stored
+> in memory, the encryption is weak, and you should not use these endpoints for
+> a real implementation. We ended up going with [Yopass](https://yopass.se/) for
+> our final implementation, but this is a choose your own adventure game.
 
-So, with a supporting `create-secret.sh` script:
+### Creating a secret
+
+To make things easy, I created a simple `create-secret.sh` script that would
+give me back a one-time link to retrieve the secret value:
 
 {{< gist syntaqx ec8654ca396904624a2bb59659dbbb90 >}}
 
-I now have a one-time link that I can provide as an input to the workflow:
+Then, I could simply run the workflow, and provide the `key` and `url` as
+inputs:
 
 ```yaml
 name: Upsert Secret Environment Variable
@@ -180,7 +184,7 @@ jobs:
           echo "${{ github.event.inputs.key }}=${{ steps.secret.outputs.value }}"
 ```
 
-And, when viewing the logs, the value is masked, and never revealed!
+Which surprisingly worked! The value was masked and never exposed in the logs!
 
 ```sh
 SECRET_KEY=***
@@ -192,7 +196,11 @@ code reviews, this solution should be secure enough for my use case.
 
 ## Conclusion
 
-I'm happy with the solution I've come up with, but I'm not happy that I had to
+While this solution isn't perfect (I mean, I could also just `echo $RESPONSE`
+before I mask it), assuming proper pull requests and code reviews, this solution
+should be secure enough for my use case.
+
+Honestly, I'm pretty happy with the solution, but I'm not happy that I had to
 come up with it. I would love to see GitHub support dynamic secrets in workflows
 so that I don't have to jump through hoops to keep my secrets secret.
 
@@ -215,4 +223,4 @@ Please, support dynamic secrets in workflows.
         type: secret
 ```
 
-❤️ - syntaqx
+I know it's not just me asking.
