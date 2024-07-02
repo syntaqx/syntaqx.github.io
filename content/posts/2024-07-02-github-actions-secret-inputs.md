@@ -115,15 +115,10 @@ env:
   SECRET_VALUE: SHHH IM SECRET
 ```
 
-### ...and
+### ...and on and on and on
 
-```
-<omitted for brevity>
-```
-
-All in all I spent probably 2 hours trying to figure out how to mask the input
+All in all, I spent probably 2 hours trying to figure out how to mask the input
 value, but no matter what I did, the value would always be exposed in the logs.
-Ugh.
 
 ## 1 Eternity Later
 
