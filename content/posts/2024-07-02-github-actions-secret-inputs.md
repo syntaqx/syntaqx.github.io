@@ -55,14 +55,19 @@ on:
 
 jobs:
 
-  # .. omitted ..
+  upsert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # .. omitted ..
 ```
 
 And that's it! No more asking operations to update your environment variables.
 
-> __Note:__ In a more ideal world, we could just "shift left" and repostories
-> would be able to manage their own Kubernetes manifests, and update their own
-> environment variables or ConfigMap. Unfortunately, we're not quite there yet.
+> __🛈 Note:__ In an ideal world, we'd "shift left" and have our K8s manifests
+> stored in application repositories, allowing engineers to maintain their own
+> `ConfigMap` or other settings. Unfortunately, we're not quite there yet.
+>
 > Depending on the service, updating an environment variable may be as simple as
 > updating a secret in AWS Secrets Manager, or as complex as updating a file on
 > an EC2 instance. This workflow allows us to abstract that complexity away from
@@ -135,11 +140,15 @@ to bother picking (or paying for) one:
 - `POST https://api.syntaqx.com/secrets` - Create a new secret
 - `GET https://api.syntaqx.com/secrets/{id}` - Retrieve a secret
 
-> __Warning:__ While this API is real, it is onnly meant as a demonstration API
-> and does not provide any real security or reliability. The values are stored
-> in memory, the encryption is weak, and you should not use these endpoints for
-> a real implementation. We ended up going with [Yopass](https://yopass.se/) for
-> our final implementation, but this is a choose your own adventure game.
+> __⚠️ Warning:__ While this API is live, it currently does not provide any
+> real security or reliability. The values are stored in memory, the encryption
+> is weak, and you should not rely on these endpoinnts for real world use.
+>
+> We ended up going with [Yopass](https://yopass.se/) for our final workflow,
+> which gave Engineers a UI to easily paste their secrets and get a one-time
+> link to retrieve them.
+>
+> Choose your own adventure.
 
 ### Creating a secret
 
