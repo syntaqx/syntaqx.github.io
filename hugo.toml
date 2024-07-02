@@ -1,9 +1,12 @@
 baseURL = 'https://syntaqx.com/'
 languageCode = 'en-us'
+copyright = '© Chase Pierce'
 title = 'Chase Pierce'
 theme = 'archie'
 
-copyright = '© Chase Pierce'
+googleAnalytics = "G-VYBYBGG5X8"
+disqusShortname = "syntaqx"
+
 
 # Code Highlight
 pygmentsstyle = "monokai"
@@ -56,6 +59,7 @@ subtitle = "Gamer, software architect, enjoyer of beverages. Your favorite inter
 mathjax = false # enable MathJax support
 katex = false # enable KaTeX support
 customcss = ["/css/custom.css"]
+mainSections = ['blog']
 
 # Social
 [[params.social]]
@@ -78,13 +82,13 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "projects"
-url = "/projects"
+name = "all posts"
+url = "/blog"
 weight = 2
 
 [[menu.main]]
-name = "all posts"
-url = "/blog"
+name = "projects"
+url = "/projects"
 weight = 3
 
 [[menu.main]]
