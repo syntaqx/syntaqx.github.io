@@ -64,7 +64,7 @@ jobs:
 
 And that's it! No more asking operations to update your environment variables.
 
-> __🛈 Note:__ In an ideal world, we'd "shift left" and have our K8s manifests
+> __ℹ️ Note:__ In an ideal world, we'd "shift left" and have our K8s manifests
 > stored in application repositories, allowing engineers to maintain their own
 > `ConfigMap` or other settings. Unfortunately, we're not quite there yet.
 >
