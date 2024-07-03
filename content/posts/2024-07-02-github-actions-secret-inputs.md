@@ -1,6 +1,6 @@
 +++
 title = "GitHub Actions & Secret Inputs"
-description = "A simple solution to a missing feature in GitHub Actions"
+description = "An exploration of using secret input in GitHub Actions manual workflows"
 date = "2024-07-02"
 tags = ["github-actions", "github", "devops", "automation"]
 +++

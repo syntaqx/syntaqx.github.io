@@ -75,6 +75,10 @@ url = "https://www.linkedin.com/in/syntaqx/"
 name = "Twitter"
 icon = "twitter"
 url = "https://twitter.com/syntaqx"
+[[params.social]]
+name = "StackOverflow"
+icon = "layers"
+url = "https://stackoverflow.com/users/1295839/syntaqx"
 
 # Main menu Items
 [[menu.main]]
