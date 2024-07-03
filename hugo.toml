@@ -61,6 +61,7 @@ posts = "posts/:slug"
 
 [params]
   author = "Chase Pierce"
+  description = "Gamer, software architect, enjoyer of beverages. Your favorite internet junkie with a love of all things digital and bacon-based."
   subtitle = "Gamer, software architect, enjoyer of beverages. Your favorite internet junkie with a love of all things digital and bacon-based."
   images = ['/img/open-graph.png']
   favicon = "/img/favicon.ico"
