@@ -66,7 +66,7 @@ posts = "posts/:slug"
   description = "Gamer, software architect, enjoyer of beverages. Your favorite internet junkie with a love of all things digital and bacon-based."
   subtitle = "Gamer, software architect, enjoyer of beverages. Your favorite internet junkie with a love of all things digital and bacon-based."
   images = ['/img/open-graph.png']
-  favicon = "/img/favicon.ico"
+  favicon = "/favicon.ico"
 
   mode="auto" # color-mode → light,dark,toggle or auto
   useCDN=true # don't use CDNs for fonts and icons, instead serve them locally.
