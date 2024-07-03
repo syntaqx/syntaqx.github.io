@@ -1,6 +1,6 @@
 baseURL = 'https://syntaqx.com/'
 
-title = 'Chase Pierce - syntaqx'
+title = 'syntaqx'
 copyright = '© Chase Pierce'
 languageCode = 'en-us'
 theme = 'archie'
@@ -61,8 +61,8 @@ fixed = ":title/"
 posts = "posts/:slug"
 
 [params]
+  title = "syntaqx"
   author = "Chase Pierce"
-  title = "Chase Pierce - syntaqx"
   description = "Gamer, software architect, enjoyer of beverages. Your favorite internet junkie with a love of all things digital and bacon-based."
   subtitle = "Gamer, software architect, enjoyer of beverages. Your favorite internet junkie with a love of all things digital and bacon-based."
   images = ['/img/open-graph.png']
