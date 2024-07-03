@@ -1,7 +1,7 @@
 +++
+date = "2024-07-01"
 title = "Hello, world, again!"
 description = "We're back! Round and round we go."
-date = "2024-07-01"
 tags = ["hello-world"]
 +++
 
