@@ -5,9 +5,16 @@ title = 'Chase Pierce'
 theme = 'archie'
 
 enableRobotsTXT = true
+
+# Deprecated in Hugo v0.120.0
 googleAnalytics = "G-VYBYBGG5X8"
 disqusShortname = "syntaqx"
 
+[services]
+  [services.disqus]
+    shortname = 'syntaqx'
+  [services.googleAnalytics]
+    id = 'G-VYBYBGG5X8'
 
 # Code Highlight
 pygmentsstyle = "monokai"
