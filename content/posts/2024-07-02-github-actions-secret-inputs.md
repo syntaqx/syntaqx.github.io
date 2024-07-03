@@ -143,7 +143,7 @@ picking (or paying for) one until I knew this could work:
 
 > __⚠️ Warning:__ While this API is live, it currently does not provide any
 > real security or reliability. The values are stored in memory, the encryption
-> is weak, and you should not rely on these endpoinnts for real world use.
+> is weak, and you should not rely on these endpoints for real world use.
 >
 > We ended up going with [Yopass](https://yopass.se/) in our final workflow,
 > which gave Engineers a UI to easily paste their secrets into and get a
