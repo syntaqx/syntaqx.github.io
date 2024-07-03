@@ -28,6 +28,7 @@
 			{{ end }}
 			{{ end }}
 		</div>
+
 		{{- $.Scratch.Set "isDisqus" true -}}
 		<!-- Check if disqus short name is given -->
 		{{ if not .Site.Config.Services.Disqus.Shortname }}
@@ -37,6 +38,7 @@
 		{{- if eq ($.Scratch.Get "isDisqus") true -}}
 		{{- partial "disqus.html" . -}}
 		{{- end -}}
+
 	</article>
 </main>
 {{ end }}
