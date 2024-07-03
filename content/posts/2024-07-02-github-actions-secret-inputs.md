@@ -3,6 +3,7 @@ title = "GitHub Actions & Secret Inputs"
 description = "An exploration of using secret input in GitHub Actions manual workflows"
 date = "2024-07-02"
 tags = ["github-actions", "github", "devops", "automation"]
+images = ["/img/open-graph/github-actions-secret-inputs.png"]
 +++
 
 
