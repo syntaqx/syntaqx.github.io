@@ -147,9 +147,9 @@ picking (or paying for) one until I knew this could work:
 > real security or reliability. The values are stored in memory, the encryption
 > is weak, and you should not rely on these endpoints for real world use.
 >
-> We ended up going with [Yopass](https://yopass.se/) in our final workflow,
-> which gave Engineers a UI to easily paste their secrets into and get a
-> one-time link to retrieve them without the need for a script.
+> We ended up going with a self-hosted [Yopass](https://yopass.se/) in our final
+> workflow, which gave Engineers a UI to easily paste their secrets into and get
+> a one-time link to retrieve them without the need for a script.
 >
 > Choose your own adventure.
 
