@@ -4,9 +4,6 @@ title = "About"
 tags = ["about", "syntaqx", "open source", "chase pierce"]
 +++
 
-I'm Chase Pierce, Principal Software Architect, creator/maintainer of
-[open source projects](https://github.com/syntaqx).
-
 I'm Chase Pierce, a hacker, open sorcerer, principal software architect;
 cloudified. I'm your favorite internet junkie with a love of all things digital
 and bacon-based.
