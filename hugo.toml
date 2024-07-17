@@ -9,11 +9,11 @@ enableRobotsTXT = true
 
 # Deprecated in Hugo v0.120.0
 googleAnalytics = "G-VYBYBGG5X8"
-disqusShortname = "syntaqx"
+# disqusShortname = "syntaqx" - No comments.
 
 [services]
-  [services.disqus]
-    shortname = 'syntaqx'
+  # [services.disqus]
+    # shortname = 'syntaqx' # No comments
   [services.googleAnalytics]
     id = 'G-VYBYBGG5X8'
 
