@@ -57,7 +57,7 @@ unsafe= true
 minifyOutput = false
 
 [permalinks]
-fixed = ":title/"
+fixed = ":title"
 posts = "posts/:slug"
 
 [params]
