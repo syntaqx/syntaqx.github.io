@@ -54,7 +54,7 @@ typographer = false
 unsafe= true
 
 [minify]
-minifyOutput = true
+minifyOutput = false
 
 [permalinks]
 fixed = ":title/"
