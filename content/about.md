@@ -2,6 +2,7 @@
 date = "2023-07-01"
 title = "About"
 tags = ["about", "syntaqx", "open source", "chase pierce"]
+comment = false
 +++
 
 I'm Chase Pierce, a hacker, open sorcerer, principal software architect;
