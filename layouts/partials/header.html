@@ -24,6 +24,12 @@
 	{{- template "_internal/opengraph.html" . -}}
 	{{- template "_internal/twitter_cards.html" . -}}
 
+	{{ if .Params.canonicalUrl }}
+	<link rel="canonical" href="{{ .Params.canonicalUrl }}">
+	{{ else }}
+	<link rel="canonical" href="{{ .RelPermalink }}">
+	{{ end }}
+
 	{{ if and (isset .Site.Params "social") (.Site.Params.useCDN | default false) -}}
 		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 	{{- else if or (isset .Site.Params "social") (eq .Site.Params.mode "toggle") -}}
