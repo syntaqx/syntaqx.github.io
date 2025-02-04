@@ -29,37 +29,33 @@ With the ability to generate code quickly, the traditional boundaries between en
 
 Looking ahead, engineers will increasingly need to:
 
--   Understand business objectives and translate them into technical solutions.
+- Understand business objectives and translate them into technical solutions.
+- Iterate on product features with real-time user feedback.
+- Make decisions on what should be built, not just how to build it.
 
--   Iterate on product features with real-time user feedback.
-
--   Make decisions on what should be built, not just how to build it.
-
-This shift is a natural progression. The most impactful engineers will be those who don't just write code but also understand the bigger picture and can make informed product decisions.
+This shift is a natural progression. The most impactful engineers will be those who don't just write code but also understand the bigger picture and can make informed product decisions. Similarly, traditional product roles will evolve---less about writing documents and more about leveraging AI to validate ideas, generate specs, and iterate faster.
 
 ## LLMs: A Tool, Not a Replacement (Yet)
 
 Even though AI can generate code, it still requires oversight. The outputs need to be verified, refined, and sometimes completely reworked. Engineers need to:
 
--   Frame the right prompts to get useful results.
-
--   Evaluate and debug AI-generated code.
-
--   Ensure the code fits within existing systems and is optimized for performance and security.
+- Frame the right prompts to get useful results.
+- Evaluate and debug AI-generated code.
+- Ensure the code fits within existing systems and is optimized for performance and security.
 
 And let's not forget---AI is only as good as its training data. Not all code it generates is high quality. Engineers still need to provide technical leadership, much like how senior developers guide junior engineers today. But this dynamic could shift over time as AI improves.
 
-## Current Limitations in AI-Assisted Development
+## Current Limitations in AI-Assisted Development (and How They're Being Solved)
 
-While AI-assisted development is making significant strides, there are still notable limitations engineers need to work around:
+While AI-assisted development is making significant strides, there are still notable limitations. The good news? These are being actively tackled.
 
--   **AI Bias & Hallucinations** -- AI-generated code isn't always correct, and it can sometimes produce completely fabricated solutions. Engineers need to validate every output before shipping.
--   **Security & Compliance Risks** -- AI doesn't inherently understand security best practices, and generated code can introduce vulnerabilities if not properly vetted.
--   **Legacy Training Data** -- Many AI models are trained on older versions of programming languages and frameworks, meaning their recommendations may be outdated or even deprecated.
--   **Tooling & Workflow Adjustments** -- AI-assisted coding requires integration into existing workflows, and companies need to determine where it fits into their CI/CD and review processes.
--   **Developer Learning Curve** -- Effective use of AI tools requires new skills, including writing precise prompts, validating AI-generated code, and making judgment calls on when AI should or shouldn't be trusted.
+- **AI Bias & Hallucinations** -- AI-generated code isn't always correct, and sometimes it completely fabricates solutions. Researchers are addressing this with improved training methods, reinforcement learning from human feedback, and integrating retrieval-based systems to verify outputs.
+- **Security & Compliance Risks** -- AI doesn't inherently understand security best practices, but new models are being trained specifically with security-awareness in mind, and automated scanning tools are being built to analyze AI-generated code before it ships.
+- **Legacy Training Data** -- Many AI models are trained on older versions of languages and frameworks, but the move toward fine-tuned, continuously updated models is helping keep AI-generated recommendations more aligned with modern best practices.
+- **Tooling & Workflow Adjustments** -- Companies are building integrations to make AI-assisted development work seamlessly within CI/CD pipelines, enforcing automated checks to verify AI-generated contributions.
+- **Developer Learning Curve** -- AI adoption isn't just about using a tool; it's about changing how we think about development. More educational resources are emerging to help engineers become better at prompt engineering and AI-guided debugging.
 
-These limitations don't make AI useless, but they highlight why human expertise is still critical. Engineers are no longer just writing code---they're curating, reviewing, and assembling AI-generated components into reliable systems.
+The road isn't smooth, but it's being paved. AI is improving quickly, and the challenges we see today won't be the same ones we deal with in a few years.
 
 ## AI is Inevitable---Adopt or Fall Behind
 
