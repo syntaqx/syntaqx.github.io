@@ -1,5 +1,4 @@
 +++
-draft = true
 title = "The Evolution of Software Engineering in the Age of AI"
 date = 2025-02-03T00:00:00Z
 description = """\
